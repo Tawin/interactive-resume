@@ -59,7 +59,7 @@
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
       top: 65px;
-      left: 33px;
+      right: -23.5px;
       transform: rotate(150deg);
 
       @mixin forTablet {

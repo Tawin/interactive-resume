@@ -1,5 +1,5 @@
 @define-mixin forMobileLarge {
-  @media (min-width: 376px) {
+  @media (min-width: 346px) {
     @mixin-content;
   }
 }
@@ -34,4 +34,9 @@
     clear: both;
     display: table;
   }
+}
+
+@define-mixin starJedi {
+  font-family: 'Star Jedi', Roboto;
+  font-weight: 100;
 }

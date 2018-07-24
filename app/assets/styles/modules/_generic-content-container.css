@@ -1,0 +1,27 @@
+.generic-content-container {
+  p {
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
+    font-weight: 300;
+
+    @mixin forLaptopLarge {
+      font-size: 1.125rem;
+    }
+  }
+
+  p a {
+    font-weight: 700;
+  }
+
+  &&--smaller-margin {
+    p {
+    margin: 0 0 1rem 0;
+    }
+  }
+
+  &&--padding-r {
+    p {
+      padding-right: 1rem;
+    }
+  }
+}

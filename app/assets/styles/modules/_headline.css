@@ -1,0 +1,19 @@
+.headline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $darkRed;
+  margin: 0;
+
+  @mixin forMobileLarge {
+    font-size: 1.5rem;
+  }
+
+  &--lite {
+    color: #000;
+    font-weight: 100;
+  }
+
+  &--small-margin-b {
+    margin-bottom: 0.5em;
+  }
+}

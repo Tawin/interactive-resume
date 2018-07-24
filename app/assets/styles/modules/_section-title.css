@@ -1,0 +1,27 @@
+.section-title {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 0 2rem 1rem 2rem;
+
+  @mixin starJedi;
+
+  @mixin forTablet {
+    font-size: 2.75rem;
+  }
+
+  @mixin forLaptop {
+    max-width: none;
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+
+  strong {
+    color: $darkRed;
+  }
+
+  &--inline-block {
+    display: inline-block;
+    border-bottom: 1px $gray solid;
+  }
+}

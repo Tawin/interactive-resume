@@ -5,4 +5,14 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+
+  @mixin forLaptop {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @mixin forLaptopLarge {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }

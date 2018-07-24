@@ -1,0 +1,21 @@
+.page-section {
+  background-color: #fff;
+  padding: 1rem 0;
+
+  @mixin forLaptop {
+    padding: 3rem 0;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem 0;
+
+    @mixin forTablet {
+      margin: 2rem 0 2.5rem 0;
+    }
+
+    @mixin forLaptop {
+      margin: 2rem 0 2.5rem 0;
+    }
+  }
+}

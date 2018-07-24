@@ -42,13 +42,12 @@
   }
 
   &__title {
-    font-family: 'Star Jedi', Roboto;
-    font-weight: 100;
     margin: 0 0 0.625rem 0;
     padding-bottom: 1.25rem;
     border-bottom: 1px $red solid;
     display: inline-block;
     max-width: none;
+    @mixin starJedi;
 
     @mixin forTablet {
       max-width: 450px;
