@@ -1,0 +1,16 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+    .icon {
+        background-image: url('/assets/images/sprites/sprite-f5aa511f.svg');
+    }
+
+    .no-svg .icon {
+        background-image: url('/assets/images/sprites/sprite-f5aa511f.png');
+    }
+
+    .icon--galactic-empire-emblem {
+        width: 77px;
+        height: 77px;
+        background-position: 0 0
+    }

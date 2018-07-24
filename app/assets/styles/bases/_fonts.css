@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Star Jedi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/star-jedi/star-jedi.woff) format('woff'), url(/assets/fonts/star-jedi/star-jedi.ttf) format('truetype');
+}

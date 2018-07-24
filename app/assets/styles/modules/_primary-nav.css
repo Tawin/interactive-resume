@@ -1,0 +1,42 @@
+.primary-nav {
+  &--pull-right {
+    float: right;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+
+  &__list-item {
+    list-style: none;
+    float: left;
+  }
+
+  &__link {
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(107, 12, 4, 0.5);
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+
+    @mixin forTablet {
+      padding: 1.125rem 1rem;
+    }
+
+    @mixin forLaptop {
+      padding: 1.125rem 1.5rem;
+    }
+
+    @mixin forLaptopLarge {
+      padding: 1.125rem 2rem;
+    }
+
+    &:hover {
+      color: $darkRed;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+      background-color: #fff;
+    }
+  }
+}

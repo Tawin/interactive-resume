@@ -1,0 +1,13 @@
+body {
+  font-family: 'Cabin', 'Roboto', sans-serif;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

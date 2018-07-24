@@ -1,0 +1,80 @@
+.large-hero {
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+
+  &__bg-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #000, rgba(#6b0c04, 0.3));
+      opacity: 0.6;
+    }
+  }
+
+  &__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba($darkRed, 0.5);
+  }
+
+  &__title {
+    font-family: 'Star Jedi', Roboto;
+    font-weight: 100;
+    margin: 0 0 0.625rem 0;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px $red solid;
+    display: inline-block;
+    max-width: none;
+
+    @mixin forTablet {
+      max-width: 450px;
+      font-size: 2.75rem;
+      letter-spacing: 3px;
+    }
+
+    @mixin forLaptop {
+      max-width: none;
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0;
+
+    @mixin forTablet {
+      font-size: 1.75rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 2rem;
+    }
+  }
+}
