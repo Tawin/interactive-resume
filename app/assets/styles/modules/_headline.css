@@ -3,17 +3,33 @@
   font-weight: 700;
   color: $darkRed;
   margin: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 
   @mixin forMobileLarge {
     font-size: 1.5rem;
   }
 
   &--lite {
-    color: #000;
     font-weight: 100;
   }
 
-  &--small-margin-b {
-    margin-bottom: 0.5em;
+  &--black {
+    color: #333333;
+  }
+
+  &--red {
+    color: $red;
+  }
+
+  &--padding-t {
+    padding-top: 2rem;
+  }
+
+  &--margin-b {
+    margin-bottom: 1rem;
+  }
+
+  &--margin-l {
+    margin-left: 1rem;
   }
 }

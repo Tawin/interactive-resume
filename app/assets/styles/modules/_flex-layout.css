@@ -3,7 +3,6 @@
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
-  flex-wrap: wrap;
   flex-direction: column;
 
   @mixin forTablet {
@@ -23,6 +22,10 @@
     flex-direction: column;
   }
 
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
   &--align-center {
     align-items: center;
   }
@@ -36,31 +39,62 @@
     flex-basis: auto;
 
     &--4 {
-      flex-basis: auto;
-      flex-grow: 0;
-      flex-shrink: 1;
+      flex-basis: 0;
+      flex-grow: 4;
+      flex-shrink: 4;
 
-      @mixin forLaptop {
-        flex-basis: 0;
-        flex-grow: 4;
-        flex-shrink: 4;
+      &-laptop {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+
+        @mixin forLaptop {
+          flex-basis: 0;
+          flex-grow: 4;
+          flex-shrink: 4;
+        }
+      }
+    }
+
+    &--6 {
+      flex-basis: 0;
+      flex-grow: 6;
+      flex-shrink: 6;
+
+      &-laptop {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+
+        @mixin forLaptop {
+          flex-basis: 0;
+          flex-grow: 6;
+          flex-shrink: 6;
+        }
       }
     }
 
     &--8 {
-      flex-basis: auto;
-      flex-grow: 0;
-      flex-shrink: 1;
+      &-laptop {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
 
-      @mixin forLaptop {
-        flex-basis: 0;
-        flex-grow: 8;
-        flex-shrink: 8;
+        @mixin forLaptop {
+          flex-basis: 0;
+          flex-grow: 8;
+          flex-shrink: 8;
+        }
       }
     }
 
     &--no-padding {
       padding: 0;
+    }
+
+    &--no-vertical-padding {
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }

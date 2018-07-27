@@ -1,0 +1,51 @@
+.rating {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    background: rgba($offwhite, 0.8);
+    padding: 0 1rem 2rem 1rem;
+    max-width: 535px;
+    margin: auto;
+
+    @mixin forLaptop {
+      max-width: 830px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    padding: 5px 1px;
+  }
+
+  &__title {
+  }
+
+  &__score {
+    padding: 5px 10px;
+    text-align: right;
+
+    @mixin clearfix;
+  }
+
+  &__icon {
+    color: $darkGray;
+    font-size: 15px;
+
+    @mixin forMobileLarge {
+      font-size: 18.5px;
+    }
+
+    @mixin forTablet {
+      font-size: 21px;
+    }
+
+    &--filled {
+      color: $darkRed;
+    }
+  }
+}

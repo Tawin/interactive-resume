@@ -9,6 +9,7 @@
   &__title-container {
     text-align: center;
     margin: 1.5rem 0 2.5rem 0;
+    padding: 0 2rem;
 
     @mixin forTablet {
       margin: 2rem 0 2.5rem 0;
@@ -17,5 +18,12 @@
     @mixin forLaptop {
       margin: 2rem 0 2.5rem 0;
     }
+  }
+
+  &--skills {
+    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
   }
 }

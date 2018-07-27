@@ -35,7 +35,7 @@
 
     &:hover {
       color: $darkRed;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
       background-color: #fff;
     }
   }

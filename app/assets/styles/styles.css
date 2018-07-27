@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import 'vendors/starwars-glyphicons.css';
 @import 'bases/_fonts';
 @import 'bases/_variables';
 @import 'bases/_mixins';
@@ -14,3 +15,4 @@
 @import 'modules/_flex-layout';
 @import 'modules/_profile';
 @import 'modules/_generic-content-container';
+@import 'modules/_rating';

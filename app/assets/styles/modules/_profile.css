@@ -6,7 +6,7 @@
     margin: auto;
     width: 150px;
     height: 150px;
-    border: 2px $gray solid;
+    border: 2px $lightGray solid;
     position: relative;
 
     @mixin forLaptop {
@@ -18,14 +18,6 @@
       width: 275px;
       height: 275px;
     }
-  }
-
-  &__details {
-    /* background-color: $offwhite;
-    padding: 15px;
-    border-top: 2px $gray solid;
-    border-right: 2px $gray solid;
-    border-bottom: 2px $gray solid; */
   }
 
   &__detail-title {
