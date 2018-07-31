@@ -18,8 +18,10 @@
     flex-direction: row;
   }
 
-  &--column {
-    flex-direction: column;
+  &--column-at-large {
+    @mixin forLaptop {
+      flex-direction: column;
+    }
   }
 
   &--wrap {
@@ -95,6 +97,10 @@
     &--no-vertical-padding {
       padding-top: 0;
       padding-bottom: 0;
+    }
+
+    &--fill {
+      flex-grow: 1;
     }
   }
 }

@@ -2,11 +2,35 @@
 Instead edit gulp/templates/sprite */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-f5aa511f.svg');
+        background-image: url('/assets/images/sprites/sprite-70a81f08.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-f5aa511f.png');
+        background-image: url('/assets/images/sprites/sprite-70a81f08.png');
+    }
+
+    .icon--arrow-back {
+        width: 38px;
+        height: 38px;
+        background-position: 57.142857142857146% 84.61538461538461%
+    }
+
+    .icon--arrow-forward {
+        width: 38px;
+        height: 38px;
+        background-position: 98.9010989010989% 84.61538461538461%
+    }
+
+    .icon--career {
+        width: 52px;
+        height: 52px;
+        background-position: 100% 0
+    }
+
+    .icon--education {
+        width: 52px;
+        height: 52px;
+        background-position: 0 100%
     }
 
     .icon--galactic-empire-emblem {

@@ -1,0 +1,330 @@
+.timeline {
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 535px;
+  overflow: hidden;
+
+  @mixin forLaptop {
+    margin: 0 auto;
+    padding-top: 4rem;
+    max-width: 768px;
+  }
+
+  @mixin forLaptopLarge {
+    margin: 0 auto;
+    padding-top: 5rem;
+    max-width: 1024px;
+  }
+
+  &__event-container {
+    position: relative;
+    width: 45px;
+
+    @mixin forTablet {
+      width: 60px;
+    }
+
+    @mixin forLaptop {
+      width: auto;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $darkRed;
+      z-index: 0;
+      width: 4px;
+      top: 10px;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @mixin forLaptop {
+        height: 4px;
+        width: auto;
+        top: unset;
+        bottom: unset;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__previous-btn {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkRed;
+    cursor: pointer;
+    left: 6px;
+    width: 35px;
+    height: 35px;
+
+    @mixin forTablet {
+      left: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon {
+      transform: scale(0.7) rotate(90deg);
+
+      @mixin forLaptop {
+        transform: scale(0.7) rotate(0);
+      }
+    }
+
+    @mixin forLaptop {
+      float: left;
+      top: 10px;
+      left: unset;
+    }
+  }
+
+  &__next-btn {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkRed;
+    cursor: pointer;
+    left: 6px;
+    width: 35px;
+    height: 35px;
+
+    @mixin forTablet {
+      left: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon {
+      transform: scale(0.7) rotate(90deg);
+
+      @mixin forLaptop {
+        transform: scale(0.7) rotate(0);
+      }
+    }
+
+    @mixin forLaptop {
+      float: right;
+      top: 10px;
+      left: unset;
+    }
+  }
+
+  &__event-list {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    overflow: hidden;
+    height: 300px;
+    top: -2px;
+
+    @mixin forLaptop {
+      top: unset;
+      white-space: nowrap;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__event-list-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    height: 33.33%;
+    /* visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5); */
+    transition: all 0.45s linear;
+
+    @mixin forLaptop {
+      transition: all 0.45s ease-out;
+      width: 33.33%;
+      height: auto;
+      display: inline-block;
+    }
+
+    @mixin forLaptopLarge {
+      width: 20%;
+    }
+
+    &--active {
+      .timeline__event {
+        background-color: $darkRed;
+      }
+
+      .timeline__icon {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__event {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px $darkRed solid;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: scale(0.7) translateY(-65%) translateX(-8px);
+
+    @mixin forMobileLarge {
+      transform: scale(0.75) translateY(-65%) translateX(-8px);
+    }
+
+    @mixin forTablet {
+      transform: scale(0.9) translateY(-50%);
+    }
+
+    @mixin forLaptop {
+      transform: scale(1) translateY(0);
+    }
+
+    &:hover {
+      background-color: $darkRed;
+    }
+  }
+
+  &__icon {
+    &:hover {
+      filter: invert(100%);
+    }
+
+    .icon {
+      transform: scale(0.7);
+    }
+  }
+
+  &__event-detail-list {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 305px;
+    top: 35px;
+
+    @mixin forLaptop {
+      white-space: nowrap;
+      margin-top: 1.5rem;
+      height: auto;
+    }
+  }
+
+  &__event-detail-list-item {
+    position: relative;
+    height: 100%;
+    padding: 1px;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: all 0.45s linear;
+
+    @mixin forTablet {
+      padding: 1rem;
+    }
+
+    @mixin forLaptop {
+      transition: all 0.45s ease-out;
+      display: inline-block;
+      width: 90%;
+      height: auto;
+    }
+
+    @mixin forLaptopLarge {
+      width: 70%;
+    }
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+
+  &__event-detail {
+    white-space: normal;
+    position: relative;
+    text-align: left;
+    margin-left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @mixin forLaptop {
+      text-align: center;
+      margin-left: 0;
+      top: unset;
+      transform: translateY(0);
+    }
+  }
+
+  &__event-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.15rem;
+
+    @mixin forMobileLarge {
+      font-size: 1.25rem;
+    }
+
+    @mixin forTablet {
+      font-size: 1.45rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__event-location {
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem 0;
+
+    @mixin forTablet {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 1rem;
+    }
+  }
+
+  &__event-dates {
+    font-size: 0.9rem;
+    margin: 0;
+
+    @mixin forTablet {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__event-description {
+    border-radius: 5px;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+
+    @mixin forTablet {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+  }
+}

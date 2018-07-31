@@ -1,3 +1,3 @@
-import LargeHero from './modules/LargeHero';
+import Timeline from './modules/Timeline';
 
-const largeHero = new LargeHero();
+const timeline = new Timeline();

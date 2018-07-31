@@ -1,5 +1,5 @@
 .page-section {
-  background-color: #fff;
+  background-color: $offwhite;
   padding: 1rem 0;
 
   @mixin forLaptop {
@@ -17,6 +17,10 @@
 
     @mixin forLaptop {
       margin: 2rem 0 2.5rem 0;
+    }
+
+    &--no-margin-b {
+      margin-bottom: 0;
     }
   }
 
