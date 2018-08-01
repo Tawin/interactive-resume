@@ -6,6 +6,18 @@
     padding: 3rem 0;
   }
 
+  &--black {
+    background-color: #313131;
+    color: $offwhite;
+  }
+
+  &--skills {
+    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
   &__title-container {
     text-align: center;
     margin: 1.5rem 0 2.5rem 0;
@@ -22,12 +34,5 @@
     &--no-margin-b {
       margin-bottom: 0;
     }
-  }
-
-  &--skills {
-    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
   }
 }

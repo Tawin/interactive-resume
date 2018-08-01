@@ -1247,41 +1247,59 @@ img {
 Instead edit gulp/templates/sprite */
 
 .icon {
-        background-image: url('/assets/images/sprites/sprite-70a81f08.svg');
+        background-image: url('/assets/images/sprites/sprite-0b721b9e.svg');
     }
 
 .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-70a81f08.png');
+        background-image: url('/assets/images/sprites/sprite-0b721b9e.png');
     }
 
 .icon--arrow-back {
         width: 38px;
         height: 38px;
-        background-position: 57.142857142857146% 84.61538461538461%
+        background-position: 0 100%
     }
 
 .icon--arrow-forward {
         width: 38px;
         height: 38px;
-        background-position: 98.9010989010989% 84.61538461538461%
+        background-position: 27.73722627737226% 100%
+    }
+
+.icon--at-sign {
+        width: 46px;
+        height: 46px;
+        background-position: 40.310077519379846% 63.63636363636363%
     }
 
 .icon--career {
         width: 52px;
         height: 52px;
-        background-position: 100% 0
+        background-position: 62.60162601626016% 0
     }
 
 .icon--education {
         width: 52px;
         height: 52px;
-        background-position: 0 100%
+        background-position: 0 66.95652173913044%
     }
 
 .icon--galactic-empire-emblem {
         width: 77px;
         height: 77px;
         background-position: 0 0
+    }
+
+.icon--github {
+        width: 46px;
+        height: 46px;
+        background-position: 100% 0
+    }
+
+.icon--linked-in {
+        width: 46px;
+        height: 46px;
+        background-position: 100% 38.01652892561984%
     }
 
 .large-hero {
@@ -1612,6 +1630,18 @@ Instead edit gulp/templates/sprite */
 }
   }
 
+.page-section--black {
+    background-color: #313131;
+    color: #fffafa;
+  }
+
+.page-section--skills {
+    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
 .page-section__title-container {
     text-align: center;
     margin: 1.5rem 0 2.5rem 0;
@@ -1636,13 +1666,6 @@ Instead edit gulp/templates/sprite */
       margin-bottom: 0;
     }
 
-.page-section--skills {
-    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-  }
-
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
@@ -1666,6 +1689,10 @@ Instead edit gulp/templates/sprite */
     padding-left: 18px;
     padding-right: 18px
 }
+  }
+
+.wrapper--narrow {
+    max-width: 500px;
   }
 
 .primary-nav--pull-right {
@@ -2060,6 +2087,7 @@ Instead edit gulp/templates/sprite */
 .timeline {
   margin: 0 auto;
   padding-top: 3rem;
+  padding-bottom: 3rem;
   max-width: 535px;
   overflow: hidden;
 }
@@ -2069,6 +2097,7 @@ Instead edit gulp/templates/sprite */
 .timeline {
     margin: 0 auto;
     padding-top: 4rem;
+    padding-bottom: 1rem;
     max-width: 768px
 }
   }
@@ -2493,4 +2522,218 @@ Instead edit gulp/templates/sprite */
       font-size: 1rem;
       line-height: 1.75rem
   }
+  }
+
+.contact {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  padding: 0 2rem;
+}
+
+@media (min-width: 481px) {
+
+.contact {
+    margin-top: 1rem
+}
+  }
+
+@media (min-width: 769px) {
+
+.contact {
+    margin-top: 2rem
+}
+  }
+
+.contact__description {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 481px) {
+
+.contact__description {
+      font-size: 1.2rem
+  }
+  }
+
+@media (min-width: 769px) {
+
+.contact__description {
+      font-size: 1.3rem
+  }
+  }
+
+.contact__description--margin-t {
+      margin-top: 4rem;
+    }
+
+.contact__item {
+    position: relative;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+.contact__label {
+    color: #ffd4d4;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+  }
+
+.contact__label--is-focused {
+      opacity: 1;
+      visibility: visible;
+    }
+
+.contact__label--left {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      -webkit-transform: translate(-35%, -200%);
+              transform: translate(-35%, -200%);
+    }
+
+.contact__label--left.contact__label--is-focused {
+        -webkit-transform: translate(-35%, -125%);
+                transform: translate(-35%, -125%);
+      }
+
+@media (min-width: 481px) {
+
+.contact__label--left {
+        -webkit-transform: translate(-50%, -200%);
+                transform: translate(-50%, -200%)
+    }
+
+        .contact__label--left.contact__label--is-focused {
+          -webkit-transform: translate(-50%, -125%);
+                  transform: translate(-50%, -125%);
+        }
+  }
+
+@media (min-width: 769px) {
+
+.contact__label--left {
+        left: 0;
+        top: 50%;
+        -webkit-transform: translate(-115%, -50%);
+                transform: translate(-115%, -50%)
+    }
+
+        .contact__label--left.contact__label--is-focused {
+          -webkit-transform: translate(-102%, -50%);
+                  transform: translate(-102%, -50%);
+        }
+  }
+
+.contact__label--right {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      -webkit-transform: translate(35%, 200%);
+              transform: translate(35%, 200%);
+    }
+
+.contact__label--right.contact__label--is-focused {
+        -webkit-transform: translate(35%, 125%);
+                transform: translate(35%, 125%);
+      }
+
+@media (min-width: 481px) {
+
+.contact__label--right {
+        -webkit-transform: translate(50%, 200%);
+                transform: translate(50%, 200%)
+    }
+
+        .contact__label--right.contact__label--is-focused {
+          -webkit-transform: translate(50%, 125%);
+                  transform: translate(50%, 125%);
+        }
+  }
+
+@media (min-width: 769px) {
+
+.contact__label--right {
+        right: 0;
+        top: 50%;
+        bottom: unset;
+        -webkit-transform: translate(115%, -50%);
+                transform: translate(115%, -50%)
+    }
+
+        .contact__label--right.contact__label--is-focused {
+          -webkit-transform: translate(102%, -50%);
+                  transform: translate(102%, -50%);
+        }
+  }
+
+.contact__icon {
+    background-color: #fffafa;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    border-radius: 1px;
+    width: 57px;
+    height: 57px;
+    transition: background-color 0.2s ease-out;
+  }
+
+@media (min-width: 346px) {
+
+.contact__icon {
+      width: 62px;
+      height: 62px
+  }
+  }
+
+@media (min-width: 769px) {
+
+.contact__icon {
+      width: 67px;
+      height: 67px
+  }
+  }
+
+.contact__icon:hover {
+      background-color: #c52121;
+    }
+
+.contact__icon:hover .icon {
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
+      }
+
+.contact__icon .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) scale(0.7);
+              transform: translate(-50%, -50%) scale(0.7);
+      -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+              filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+      transition: -webkit-filter 0.2s ease-out;
+      transition: filter 0.2s ease-out;
+      transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+    }
+
+@media (min-width: 346px) {
+
+.contact__icon .icon {
+        -webkit-transform: translate(-50%, -50%) scale(0.8);
+                transform: translate(-50%, -50%) scale(0.8)
+    }
+  }
+
+@media (min-width: 769px) {
+
+.contact__icon .icon {
+        -webkit-transform: translate(-50%, -50%) scale(0.9);
+                transform: translate(-50%, -50%) scale(0.9)
+    }
   }

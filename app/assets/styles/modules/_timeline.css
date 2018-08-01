@@ -1,12 +1,14 @@
 .timeline {
   margin: 0 auto;
   padding-top: 3rem;
+  padding-bottom: 3rem;
   max-width: 535px;
   overflow: hidden;
 
   @mixin forLaptop {
     margin: 0 auto;
     padding-top: 4rem;
+    padding-bottom: 1rem;
     max-width: 768px;
   }
 

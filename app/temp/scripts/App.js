@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Timeline = __webpack_require__(/*! ./modules/Timeline */ \"./app/assets/scripts/modules/Timeline.js\");\n\nvar _Timeline2 = _interopRequireDefault(_Timeline);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar timeline = new _Timeline2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _Timeline = __webpack_require__(/*! ./modules/Timeline */ \"./app/assets/scripts/modules/Timeline.js\");\n\nvar _Timeline2 = _interopRequireDefault(_Timeline);\n\nvar _Contact = __webpack_require__(/*! ./modules/Contact */ \"./app/assets/scripts/modules/Contact.js\");\n\nvar _Contact2 = _interopRequireDefault(_Contact);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar timeline = new _Timeline2.default();\nvar contact = new _Contact2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("\n\nvar _Timeline = __webpack_require__(/*! ./modules/Timeline */ \"./app/
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar MediaQuery = function () {\n  function MediaQuery() {\n    _classCallCheck(this, MediaQuery);\n  }\n\n  _createClass(MediaQuery, null, [{\n    key: 'isForMobileLarge',\n    value: function isForMobileLarge() {\n      return window.matchMedia('(min-width: 346px)').matches;\n    }\n  }, {\n    key: 'isForTabletSize',\n    value: function isForTabletSize() {\n      return window.matchMedia('(min-width: 481px)').matches;\n    }\n  }, {\n    key: 'isForLaptopSize',\n    value: function isForLaptopSize() {\n      return window.matchMedia('(min-width: 769px)').matches;\n    }\n  }, {\n    key: 'isForLaptopLargeSize',\n    value: function isForLaptopLargeSize() {\n      return window.matchMedia('(min-width: 1025px)').matches;\n    }\n  }, {\n    key: 'isForUltraHDSize',\n    value: function isForUltraHDSize() {\n      return window.matchMedia('(min-width: 1441px)').matches;\n    }\n  }]);\n\n  return MediaQuery;\n}();\n\nexports.default = MediaQuery;\n\n//# sourceURL=webpack:///./app/assets/scripts/bases/MediaQuery.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Contact.js":
+/*!***********************************************!*\
+  !*** ./app/assets/scripts/modules/Contact.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Contact = function () {\n  function Contact() {\n    _classCallCheck(this, Contact);\n\n    this.icons = (0, _jquery2.default)('.contact__icon');\n\n    this.events();\n  }\n\n  _createClass(Contact, [{\n    key: 'events',\n    value: function events() {\n      this.icons.mouseenter(this.show.bind(this));\n      this.icons.mouseleave(this.hide.bind(this));\n    }\n  }, {\n    key: 'show',\n    value: function show(e) {\n      (0, _jquery2.default)(e.currentTarget).parent().find('.contact__label').addClass('contact__label--is-focused');\n    }\n  }, {\n    key: 'hide',\n    value: function hide(e) {\n      (0, _jquery2.default)(e.currentTarget).parent().find('.contact__label').removeClass('contact__label--is-focused');\n    }\n  }]);\n\n  return Contact;\n}();\n\nexports.default = Contact;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Contact.js?");
 
 /***/ }),
 

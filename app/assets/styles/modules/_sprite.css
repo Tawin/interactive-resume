@@ -2,39 +2,57 @@
 Instead edit gulp/templates/sprite */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-70a81f08.svg');
+        background-image: url('/assets/images/sprites/sprite-0b721b9e.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-70a81f08.png');
+        background-image: url('/assets/images/sprites/sprite-0b721b9e.png');
     }
 
     .icon--arrow-back {
         width: 38px;
         height: 38px;
-        background-position: 57.142857142857146% 84.61538461538461%
+        background-position: 0 100%
     }
 
     .icon--arrow-forward {
         width: 38px;
         height: 38px;
-        background-position: 98.9010989010989% 84.61538461538461%
+        background-position: 27.73722627737226% 100%
+    }
+
+    .icon--at-sign {
+        width: 46px;
+        height: 46px;
+        background-position: 40.310077519379846% 63.63636363636363%
     }
 
     .icon--career {
         width: 52px;
         height: 52px;
-        background-position: 100% 0
+        background-position: 62.60162601626016% 0
     }
 
     .icon--education {
         width: 52px;
         height: 52px;
-        background-position: 0 100%
+        background-position: 0 66.95652173913044%
     }
 
     .icon--galactic-empire-emblem {
         width: 77px;
         height: 77px;
         background-position: 0 0
+    }
+
+    .icon--github {
+        width: 46px;
+        height: 46px;
+        background-position: 100% 0
+    }
+
+    .icon--linked-in {
+        width: 46px;
+        height: 46px;
+        background-position: 100% 38.01652892561984%
     }

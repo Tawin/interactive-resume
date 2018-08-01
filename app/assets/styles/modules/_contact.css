@@ -1,0 +1,158 @@
+.contact {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  padding: 0 2rem;
+
+  @mixin forTablet {
+    margin-top: 1rem;
+  }
+
+  @mixin forLaptop {
+    margin-top: 2rem;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    @mixin forTablet {
+      font-size: 1.2rem;
+    }
+
+    @mixin forLaptop {
+      font-size: 1.3rem;
+    }
+
+    &--margin-t {
+      margin-top: 4rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  &__label {
+    color: $lightRed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+
+    &--is-focused {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &--left {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-35%, -200%);
+
+      &.contact__label--is-focused {
+        transform: translate(-35%, -125%);
+      }
+
+      @mixin forTablet {
+        transform: translate(-50%, -200%);
+
+        &.contact__label--is-focused {
+          transform: translate(-50%, -125%);
+        }
+      }
+
+      @mixin forLaptop {
+        left: 0;
+        top: 50%;
+        transform: translate(-115%, -50%);
+
+        &.contact__label--is-focused {
+          transform: translate(-102%, -50%);
+        }
+      }
+    }
+
+    &--right {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      transform: translate(35%, 200%);
+
+      &.contact__label--is-focused {
+        transform: translate(35%, 125%);
+      }
+
+      @mixin forTablet {
+        transform: translate(50%, 200%);
+
+        &.contact__label--is-focused {
+          transform: translate(50%, 125%);
+        }
+      }
+
+      @mixin forLaptop {
+        right: 0;
+        top: 50%;
+        bottom: unset;
+        transform: translate(115%, -50%);
+
+        &.contact__label--is-focused {
+          transform: translate(102%, -50%);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    background-color: $offwhite;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    border-radius: 1px;
+    width: 57px;
+    height: 57px;
+    transition: background-color 0.2s ease-out;
+
+    @mixin forMobileLarge {
+      width: 62px;
+      height: 62px;
+    }
+
+    @mixin forLaptop {
+      width: 67px;
+      height: 67px;
+    }
+
+    &:hover {
+      background-color: $red;
+
+      .icon {
+        filter: invert(100%);
+      }
+    }
+
+    .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.7);
+      filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+      transition: filter 0.2s ease-out;
+
+      @mixin forMobileLarge {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+
+      @mixin forLaptop {
+        transform: translate(-50%, -50%) scale(0.9);
+      }
+    }
+  }
+}
