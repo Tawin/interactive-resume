@@ -2276,9 +2276,6 @@ Instead edit gulp/templates/sprite */
     text-align: center;
     cursor: pointer;
     height: 33.33%;
-    /* visibility: hidden;
-    opacity: 0;
-    transform: scale(0.5); */
     transition: all 0.45s linear;
   }
 
@@ -2318,6 +2315,7 @@ Instead edit gulp/templates/sprite */
     top: 50%;
     -webkit-transform: scale(0.7) translateY(-65%) translateX(-8px);
             transform: scale(0.7) translateY(-65%) translateX(-8px);
+    transition: all 0.2s ease-out;
   }
 
 @media (min-width: 346px) {
@@ -2347,6 +2345,10 @@ Instead edit gulp/templates/sprite */
 .timeline__event:hover {
       background-color: #6b0c04;
     }
+
+.timeline__icon {
+    transition: all 0.2s ease-out;
+  }
 
 .timeline__icon:hover {
       -webkit-filter: invert(100%);
@@ -2383,8 +2385,6 @@ Instead edit gulp/templates/sprite */
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
     transition: all 0.45s linear;
   }
 
@@ -2415,8 +2415,6 @@ Instead edit gulp/templates/sprite */
 .timeline__event-detail-list-item--active {
       opacity: 1;
       visibility: visible;
-      -webkit-transform: scale(1);
-              transform: scale(1);
     }
 
 .timeline__event-detail {
