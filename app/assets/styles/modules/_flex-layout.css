@@ -32,6 +32,10 @@
     align-items: center;
   }
 
+  &--justify-center {
+    justify-content: center;
+  }
+
   &--no-padding {
     padding: 0;
   }

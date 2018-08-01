@@ -1880,6 +1880,10 @@ Instead edit gulp/templates/sprite */
     align-items: center;
   }
 
+.flex-layout--justify-center {
+    justify-content: center;
+  }
+
 .flex-layout--no-padding {
     padding: 0;
   }
@@ -2737,3 +2741,81 @@ Instead edit gulp/templates/sprite */
                 transform: translate(-50%, -50%) scale(0.9)
     }
   }
+
+.site-footer {
+  background-color: #313131;
+  color: #fffafa;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.site-footer__text {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+@media (min-width: 769px) {
+
+.site-footer__text {
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem
+  }
+  }
+
+.btn {
+  background-color: #6b0c04;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+}
+
+.btn--white {
+    background-color: #fffafa;
+    color: #6b0c04;
+  }
+
+.btn--icon {
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    position: relative;
+  }
+
+.btn--icon:hover {
+      background-color: #fffafa;
+      color: #6b0c04;
+    }
+
+.btn--rounded {
+    border-radius: 50%;
+  }
+
+.btn__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+.btn__icon .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -webkit-filter: invert(100%);
+              filter: invert(100%);
+      transition: -webkit-filter 0.2s ease-out;
+      transition: filter 0.2s ease-out;
+      transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+    }
+
+.btn__icon .icon:hover {
+        -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+                filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+      }

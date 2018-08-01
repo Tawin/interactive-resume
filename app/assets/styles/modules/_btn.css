@@ -1,0 +1,50 @@
+.btn {
+  background-color: $darkRed;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+
+  &--white {
+    background-color: $offwhite;
+    color: $darkRed;
+  }
+
+  &--icon {
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    position: relative;
+
+    &:hover {
+      background-color: $offwhite;
+      color: $darkRed;
+    }
+  }
+
+  &--rounded {
+    border-radius: 50%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: invert(100%);
+      transition: filter 0.2s ease-out;
+
+      &:hover {
+        filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
+      }
+    }
+  }
+}
