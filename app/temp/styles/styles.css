@@ -2049,9 +2049,25 @@ Instead edit gulp/templates/sprite */
 
 .rating__list-item {
     padding: 5px 1px;
+    background-color: transparent;
+  }
+
+.rating__list-item:hover {
+      background-color: rgba(115,115,115, 0.15);
+    }
+
+.rating__list-item:hover .rating__icon--filled {
+        color: #c52121;
+      }
+
+@media (min-width: 769px) {
+        .rating__list-item:hover .rating__icon {
+          margin-left: 1px;
+        }
   }
 
 .rating__title {
+    margin-left: 5px;
   }
 
 .rating__score {
@@ -2068,6 +2084,7 @@ Instead edit gulp/templates/sprite */
 .rating__icon {
     color: #737373;
     font-size: 15px;
+    transition: all 0.2s ease-out;
   }
 
 @media (min-width: 346px) {
