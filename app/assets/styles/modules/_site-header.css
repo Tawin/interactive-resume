@@ -4,7 +4,12 @@
   z-index: 2;
 
   @mixin forTablet {
+    position: fixed;
     background-color: rgba($darkRed, 0.3);
+
+    &--dark {
+      background-color: rgba($darkRed, 0.85);
+    }
   }
 
   &__logo {
@@ -17,13 +22,20 @@
     transform: translateX(-50%) scale(0.8);
     transform-origin: 50% 0;
     margin-top: 5px;
+    transition: all 0.3s ease-out;
 
     @mixin forTablet {
       margin-top: 10px;
+
+      .site-header--dark & {
+        margin-top: 5px;
+        transform: translateX(-50%) scale(0.5);
+      }
     }
   }
 
   &__logo-flag {
+    position: relative;
     background-color: $darkRed;
     height: 75px;
     width: 150px;
@@ -31,71 +43,136 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.3s ease-out;
+    transition-property: height;
 
     @mixin forTablet {
       height: 96px;
       left: auto;
       transform: translateX(0);
       width: 90px;
+
+      .site-header--dark & {
+        height: 52px;
+        box-shadow: 2px 0px #000, -2px 0px #000, 0px 2px #000, 2px 2px #000, -2px 2px #000;
+      }
+
+      .site-header--dark &::before {
+        visibility: hidden;
+        opacity: 0;
+        top: 30px;
+        border-bottom: 70px solid #6b0c04;
+      }
+
+      .site-header--dark &::after {
+        visibility: hidden;
+        opacity: 0;
+        top: 30px;
+        border-bottom: 70px solid #6b0c04;
+      }
     }
 
     &::before {
+      content: '';
       position: absolute;
       border-bottom: 70px solid $darkRed;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 65px;
+      top: 0;
       left: -23px;
       transform: rotate(-150deg);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
 
       @mixin forTablet {
-        content: '';
+        top: 65px;
+        visibility: visible;
+        opacity: 1;
       }
     }
 
     &::after {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #6b0c04;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 65px;
+      top: 0;
       right: -23.5px;
       transform: rotate(150deg);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
 
       @mixin forTablet {
-        content: '';
+        top: 65px;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
 
   &__logo-flag-clipper {
+    position: relative;
+
+    .site-header--dark &::before {
+      visibility: hidden;
+      opacity: 0;
+      top: 35px;
+      border-bottom: 70px solid #000;
+    }
+
+    .site-header--dark &::after {
+      visibility: hidden;
+      opacity: 0;
+      top: 35px;
+      border-bottom: 70px solid #000;
+    }
+
     &::before {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #000;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 74px;
+      top: 0;
       left: -28px;
       transform: rotate(-150deg);
       z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
 
       @mixin forTablet {
-        content: '';
+        top: 74px;
+        visibility: visible;
+        opacity: 1;
       }
     }
 
     &::after {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #000;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 74px;
+      top: 0;
       left: 38px;
       transform: rotate(150deg);
       z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
 
       @mixin forTablet {
-        content: '';
+        top: 74px;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

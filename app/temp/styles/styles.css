@@ -1405,8 +1405,13 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 481px) {
 
 .site-header {
+    position: fixed;
     background-color: rgba(107,12,4, 0.3)
 }
+
+    .site-header--dark {
+      background-color: rgba(107,12,4, 0.85);
+    }
   }
 
 .site-header__logo {
@@ -1421,6 +1426,7 @@ Instead edit gulp/templates/sprite */
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     margin-top: 5px;
+    transition: all 0.3s ease-out;
   }
 
 @media (min-width: 481px) {
@@ -1428,9 +1434,16 @@ Instead edit gulp/templates/sprite */
 .site-header__logo {
       margin-top: 10px
   }
+
+      .site-header--dark .site-header__logo {
+        margin-top: 5px;
+        -webkit-transform: translateX(-50%) scale(0.5);
+                transform: translateX(-50%) scale(0.5);
+      }
   }
 
 .site-header__logo-flag {
+    position: relative;
     background-color: #6b0c04;
     height: 75px;
     width: 150px;
@@ -1439,6 +1452,8 @@ Instead edit gulp/templates/sprite */
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    transition: all 0.3s ease-out;
+    transition-property: height;
   }
 
 @media (min-width: 481px) {
@@ -1450,79 +1465,144 @@ Instead edit gulp/templates/sprite */
               transform: translateX(0);
       width: 90px
   }
+
+      .site-header--dark .site-header__logo-flag {
+        height: 52px;
+        box-shadow: 2px 0px #000, -2px 0px #000, 0px 2px #000, 2px 2px #000, -2px 2px #000;
+      }
+
+      .site-header--dark .site-header__logo-flag::before {
+        visibility: hidden;
+        opacity: 0;
+        top: 30px;
+        border-bottom: 70px solid #6b0c04;
+      }
+
+      .site-header--dark .site-header__logo-flag::after {
+        visibility: hidden;
+        opacity: 0;
+        top: 30px;
+        border-bottom: 70px solid #6b0c04;
+      }
   }
 
 .site-header__logo-flag::before {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #6b0c04;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 65px;
+      top: 0;
       left: -23px;
       -webkit-transform: rotate(-150deg);
               transform: rotate(-150deg);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
     }
 
 @media (min-width: 481px) {
 
 .site-header__logo-flag::before {
-        content: ''
+        top: 65px;
+        visibility: visible;
+        opacity: 1
     }
   }
 
 .site-header__logo-flag::after {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #6b0c04;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 65px;
+      top: 0;
       right: -23.5px;
       -webkit-transform: rotate(150deg);
               transform: rotate(150deg);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
     }
 
 @media (min-width: 481px) {
 
 .site-header__logo-flag::after {
-        content: ''
+        top: 65px;
+        visibility: visible;
+        opacity: 1
     }
   }
 
+.site-header__logo-flag-clipper {
+    position: relative;
+  }
+
+.site-header--dark .site-header__logo-flag-clipper::before {
+      visibility: hidden;
+      opacity: 0;
+      top: 35px;
+      border-bottom: 70px solid #000;
+    }
+
+.site-header--dark .site-header__logo-flag-clipper::after {
+      visibility: hidden;
+      opacity: 0;
+      top: 35px;
+      border-bottom: 70px solid #000;
+    }
+
 .site-header__logo-flag-clipper::before {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #000;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 74px;
+      top: 0;
       left: -28px;
       -webkit-transform: rotate(-150deg);
               transform: rotate(-150deg);
       z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
     }
 
 @media (min-width: 481px) {
 
 .site-header__logo-flag-clipper::before {
-        content: ''
+        top: 74px;
+        visibility: visible;
+        opacity: 1
     }
   }
 
 .site-header__logo-flag-clipper::after {
+      content: '';
       position: absolute;
       border-bottom: 70px solid #000;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      top: 74px;
+      top: 0;
       left: 38px;
       -webkit-transform: rotate(150deg);
               transform: rotate(150deg);
       z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transition-property: border-bottom, top;
     }
 
 @media (min-width: 481px) {
 
 .site-header__logo-flag-clipper::after {
-        content: ''
+        top: 74px;
+        visibility: visible;
+        opacity: 1
     }
   }
 
