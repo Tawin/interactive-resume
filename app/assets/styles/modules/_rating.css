@@ -25,10 +25,6 @@
     &:hover {
       background-color: rgba($darkGray, 0.15);
 
-      .rating__icon--filled {
-        color: $red;
-      }
-
       @mixin forLaptop {
         .rating__icon {
           margin-left: 1px;

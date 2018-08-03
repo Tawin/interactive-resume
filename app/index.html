@@ -23,24 +23,26 @@
         </div>
       </div>
 
-      <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
+      <div class="site-header__menu-icon-container">
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
       </div>
 
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul class="primary-nav__list">
             <li class="primary-nav__list-item">
-              <a class="primary-nav__link" href="">Profile</a>
+              <a href="#profile" id="profile-link" class="primary-nav__link">Profile</a>
             </li>
             <li class="primary-nav__list-item">
-              <a class="primary-nav__link" href="">Skills</a>
+              <a href="#skills" id="skills-link" class="primary-nav__link">Skills</a>
             </li>
             <li class="primary-nav__list-item">
-              <a class="primary-nav__link" href="">Experiences</a>
+              <a href="#experiences" id="experiences-link" class="primary-nav__link">Experiences</a>
             </li>
             <li class="primary-nav__list-item">
-              <a class="primary-nav__link" href="">Contact</a>
+              <a href="#contact" id="contact-link" class="primary-nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +65,7 @@
     </div>
   </div>
 
-  <div id="profile" class="page-section">
+  <div id="profile" class="page-section" data-matching-link="#profile-link">
 
     <div class="page-section__title-container">
       <h1 class="section-title section-title--inline-block">
@@ -124,7 +126,7 @@
     </div>
   </div>
 
-  <div id="skills" class="page-section page-section--skills">
+  <div id="skills" class="page-section page-section--skills" data-matching-link="#skills-link">
     <div class="page-section__title-container">
       <h1 class="section-title section-title--white section-title--white-inline-block">
         Professional
@@ -672,7 +674,7 @@
     </div>
   </div>
 
-  <div id="experiences" class="page-section">
+  <div id="experiences" class="page-section" data-matching-link="#experiences-link">
 
     <div class="page-section__title-container page-section__title-container--no-margin-b">
       <h1 class="section-title section-title--inline-block">
@@ -833,7 +835,7 @@
     </div>
   </div>
 
-  <div id="contact" class="page-section page-section--black">
+  <div id="contact" class="page-section page-section--black" data-matching-link="#contact-link">
     <div class="page-section__title-container page-section__title-container--no-margin-b">
       <h1 class="section-title section-title--white">
         Contact

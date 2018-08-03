@@ -1,17 +1,38 @@
 .primary-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @mixin forTablet {
+    top: 0;
+    transform: translateY(0);
+  }
+
   &--pull-right {
-    float: right;
+    @mixin forTablet {
+      float: right;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
+    line-height: 4rem;
+
     @mixin clearfix;
+
+    @mixin forTablet {
+      line-height: unset;
+    }
   }
 
   &__list-item {
     list-style: none;
-    float: left;
+
+    @mixin forTablet {
+      float: left;
+      display: block;
+    }
   }
 
   &__link {
@@ -20,8 +41,12 @@
     text-decoration: none;
     font-weight: 300;
     display: inline-block;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-out;
+    transition-property: color, text-shadow, background-color;
 
     @mixin forTablet {
+      font-size: 1rem;
       padding: 1.125rem 1rem;
     }
 
@@ -33,10 +58,22 @@
       padding: 1.125rem 2rem;
     }
 
+    &.is-current-link {
+      color: $red;
+
+      @mixin forTablet {
+        color: $darkRed;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+    }
+
     &:hover {
-      color: $darkRed;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-      background-color: #fff;
+      @mixin forTablet {
+        color: $darkRed;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
     }
   }
 }

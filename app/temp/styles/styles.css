@@ -1402,10 +1402,6 @@ Instead edit gulp/templates/sprite */
   z-index: 2;
 }
 
-.site-header--is-expanded {
-    background-color: rgba(107,12,4, 0.55);
-  }
-
 @media (min-width: 481px) {
 
 .site-header {
@@ -1614,13 +1610,39 @@ Instead edit gulp/templates/sprite */
     text-indent: -9999px;
   }
 
+.site-header__menu-icon-container {
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(107,12,4, 0.8);
+    z-index: 10;
+    transition: all 0.3s ease-out;
+  }
+
+@media (min-width: 481px) {
+
+.site-header__menu-icon-container {
+      display: none
+  }
+  }
+
+.site-header__menu-icon-container--no-bg {
+      background-color: transparent;
+    }
+
+.site-header__menu-icon-container--hide {
+      top: -40px;
+    }
+
 .site-header__menu-icon {
     width: 20px;
     height: 19px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
 .site-header__menu-icon::before {
@@ -1684,34 +1706,29 @@ Instead edit gulp/templates/sprite */
                 transform: rotate(-45deg) scaleX(1.25) translateY(1px);
       }
 
-@media (min-width: 481px) {
-
-.site-header__menu-icon {
-      display: none
-  }
-  }
-
 .site-header__menu-content {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    visibility: hidden;
     opacity: 0;
     z-index: -10;
     text-align: center;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     transition: all 0.3s ease-out;
-    transition-property: opacity, z-index, -webkit-transform;
-    transition-property: opacity, z-index, transform;
-    transition-property: opacity, z-index, transform, -webkit-transform;
+    transition-property: visibility, opacity, -webkit-transform;
+    transition-property: visibility, opacity, transform;
+    transition-property: visibility, opacity, transform, -webkit-transform;
   }
 
 @media (min-width: 481px) {
 
 .site-header__menu-content {
       position: relative;
+      visibility: visible;
       opacity: 1;
       z-index: 1;
       -webkit-transform: scale(1);
@@ -1720,10 +1737,12 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header__menu-content--is-visible {
+      visibility: visible;
       opacity: 1;
-      z-index: 1;
+      z-index: 9;
       -webkit-transform: scale(1);
               transform: scale(1);
+      background-color: rgba(24,6,37, 0.8);
     }
 
 .page-section {
@@ -1803,13 +1822,33 @@ Instead edit gulp/templates/sprite */
     max-width: 500px;
   }
 
+.primary-nav {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (min-width: 481px) {
+
+.primary-nav {
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0)
+}
+  }
+
+@media (min-width: 481px) {
+
 .primary-nav--pull-right {
-    float: right;
+      float: right
+  }
   }
 
 .primary-nav__list {
     margin: 0;
     padding: 0;
+    line-height: 4rem;
   }
 
 .primary-nav__list::after {
@@ -1818,9 +1857,23 @@ Instead edit gulp/templates/sprite */
     display: table;
   }
 
+@media (min-width: 481px) {
+
+.primary-nav__list {
+      line-height: unset
+  }
+  }
+
 .primary-nav__list-item {
     list-style: none;
-    float: left;
+  }
+
+@media (min-width: 481px) {
+
+.primary-nav__list-item {
+      float: left;
+      display: block
+  }
   }
 
 .primary-nav__link {
@@ -1829,11 +1882,15 @@ Instead edit gulp/templates/sprite */
     text-decoration: none;
     font-weight: 300;
     display: inline-block;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-out;
+    transition-property: color, text-shadow, background-color;
   }
 
 @media (min-width: 481px) {
 
 .primary-nav__link {
+      font-size: 1rem;
       padding: 1.125rem 1rem
   }
   }
@@ -1852,11 +1909,27 @@ Instead edit gulp/templates/sprite */
   }
   }
 
-.primary-nav__link:hover {
-      color: #6b0c04;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-      background-color: #fff;
+.primary-nav__link.is-current-link {
+      color: #c52121;
     }
+
+@media (min-width: 481px) {
+
+.primary-nav__link.is-current-link {
+        color: #6b0c04;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff
+    }
+  }
+
+@media (min-width: 481px) {
+
+.primary-nav__link:hover {
+        color: #6b0c04;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff
+    }
+  }
 
 .section-title {
   font-weight: 300;
@@ -2163,10 +2236,6 @@ Instead edit gulp/templates/sprite */
 .rating__list-item:hover {
       background-color: rgba(115,115,115, 0.15);
     }
-
-.rating__list-item:hover .rating__icon--filled {
-        color: #c52121;
-      }
 
 @media (min-width: 769px) {
         .rating__list-item:hover .rating__icon {
