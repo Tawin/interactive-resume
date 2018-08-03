@@ -3,12 +3,16 @@
   width: 100%;
   z-index: 2;
 
+  &--is-expanded {
+    background-color: rgba($darkRed, 0.55);
+  }
+
   @mixin forTablet {
     position: fixed;
     background-color: rgba($darkRed, 0.3);
 
     &--dark {
-      background-color: rgba($darkRed, 0.85);
+      background-color: rgba($darkRed, 0.8);
     }
   }
 
@@ -181,18 +185,10 @@
     text-indent: -9999px;
   }
 
-  &__menu-content {
-    display: none;
-
-    @mixin forTablet {
-      display: block;
-    }
-  }
-
   &__menu-icon {
     width: 20px;
     height: 19px;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     z-index: 10;
@@ -250,6 +246,33 @@
 
     @mixin forTablet {
       display: none;
+    }
+  }
+
+  &__menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -10;
+    text-align: center;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    transition-property: opacity, z-index, transform;
+
+    @mixin forTablet {
+      position: relative;
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
     }
   }
 }
