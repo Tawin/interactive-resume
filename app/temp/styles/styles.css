@@ -341,892 +341,30 @@ template {
   display: none;
 }
 
-/*!
- *  Star Wars GlyphIcons 1.4 by @maxtusken - http://starwarsglyphicons.com - @starwarsglyphicons
- *  License - http://starwarsglyphicons.com/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
+/* $primaryLight: #72bae5; */
 
-/* FONT PATH
- * -------------------------- */
+/* $primaryDark: #242582; */
 
-@font-face {
-  font-family: 'StarWarsGlyphicons';
-  1src: url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.eot?v=4.7.0');
-  1src: url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-    url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-    url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-    url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-    url('/assets/fonts/starwars-glyphicons/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  src: url('/assets/fonts/starwars-glyphicons/starwars-glyphicons-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* $secondaryLight: #99738e; */
 
-.swg {
-  display: inline-block;
-  font: normal normal normal 14px/1 StarWarsGlyphicons;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* $secondaryDark: #553d67; */
 
-/* makes the font 33% larger relative to the icon container */
-
-.swg-lg {
-  font-size: 1.33333333em;
-  line-height: 0.75em;
-  vertical-align: -15%;
-}
-
-.swg-2x {
-  font-size: 2em;
-}
-
-.swg-3x {
-  font-size: 3em;
-}
-
-.swg-4x {
-  font-size: 4em;
-}
-
-.swg-5x {
-  font-size: 5em;
-}
-
-.swg-6x {
-  font-size: 6em;
-}
-
-.swg-fw {
-  width: 1.28571429em;
-  text-align: center;
-}
-
-.swg-ul {
-  padding-left: 0;
-  margin-left: 2.14285714em;
-  list-style-type: none;
-}
-
-.swg-ul > li {
-  position: relative;
-}
-
-.swg-li {
-  position: absolute;
-  left: -2.14285714em;
-  width: 2.14285714em;
-  top: 0.14285714em;
-  text-align: center;
-}
-
-.swg-li.swg-lg {
-  left: -1.85714286em;
-}
-
-.swg-border {
-  padding: 0.2em 0.25em 0.15em;
-  border: solid 0.08em #eeeeee;
-  border-radius: 0.1em;
-}
-
-.swg-pull-left {
-  float: left;
-}
-
-.swg-pull-right {
-  float: right;
-}
-
-.fa.swg-pull-left {
-  margin-right: 0.3em;
-}
-
-.fa.swg-pull-right {
-  margin-left: 0.3em;
-}
-
-/* Deprecated as of 4.4.0 */
-
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-.fa.pull-left {
-  margin-right: 0.3em;
-}
-
-.fa.pull-right {
-  margin-left: 0.3em;
-}
-
-.swg-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear;
-}
-
-.swg-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+@-webkit-keyframes moveToRight {
+  from {
+    left: -50%;
   }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+  to {
+    left: 50%;
   }
 }
 
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+@keyframes moveToRight {
+  from {
+    left: -50%;
   }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+  to {
+    left: 50%;
   }
-}
-
-.swg-rotate-90 {
-  -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=1)';
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.swg-rotate-180 {
-  -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2)';
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.swg-rotate-270 {
-  -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=3)';
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-
-.swg-flip-horizontal {
-  -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
-  -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-
-.swg-flip-vertical {
-  -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)';
-  -webkit-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-
-:root .swg-rotate-90,
-:root .swg-rotate-180,
-:root .swg-rotate-270,
-:root .swg-flip-horizontal,
-:root .swg-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.swg-stack {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  vertical-align: middle;
-}
-
-.swg-stack-1x,
-.swg-stack-2x {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.swg-stack-1x {
-  line-height: inherit;
-}
-
-.swg-stack-2x {
-  font-size: 2em;
-}
-
-.swg-inverse {
-  color: #ffffff;
-}
-
-/* Star Wars GlyphIcons uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
-
-.swg-starwars:before {
-  content: '\f000';
-}
-
-.swg-sw-alt:before {
-  content: '\f001';
-}
-
-.swg-sw-alt-2:before {
-  content: '\f002';
-}
-
-.swg-title4:before {
-  content: '\f003';
-}
-
-.swg-title5:before {
-  content: '\f004';
-}
-
-.swg-title6:before {
-  content: '\f005';
-}
-
-.swg-reball:before {
-  content: '\f006';
-}
-
-.swg-newrep:before {
-  content: '\f007';
-}
-
-.swg-galemp:before {
-  content: '\f008';
-}
-
-.swg-mandalorcrest:before {
-  content: '\f009';
-}
-
-.swg-mandalorian:before {
-  content: '\f00A';
-}
-
-.swg-blacksun:before {
-  content: '\f00B';
-}
-
-.swg-sith:before {
-  content: '\f00C';
-}
-
-.swg-galsenate:before {
-  content: '\f00D';
-}
-
-.swg-newjediorder:before {
-  content: '\f00E';
-}
-
-.swg-separ:before {
-  content: '\f00F';
-}
-
-.swg-jediorder:before {
-  content: '\f010';
-}
-
-.swg-galrep:before {
-  content: '\f011';
-}
-
-.swg-sithemp:before {
-  content: '\f012';
-}
-
-.swg-kirkanos:before {
-  content: '\f013';
-}
-
-.swg-credits:before {
-  content: '\f014';
-}
-
-.swg-ep1:before {
-  content: '\f015';
-}
-
-.swg-ep2:before {
-  content: '\f016';
-}
-
-.swg-ep3:before {
-  content: '\f017';
-}
-
-.swg-ep4:before {
-  content: '\f018';
-}
-
-.swg-ep5:before {
-  content: '\f019';
-}
-
-.swg-ep6:before {
-  content: '\f01A';
-}
-
-.swg-deathstar:before {
-  content: '\f01B';
-}
-
-.swg-deathstar-3:before {
-  content: '\f01C';
-}
-
-.swg-deathstar-4:before {
-  content: '\f01D';
-}
-
-.swg-r2d2:before {
-  content: '\f01E';
-}
-
-.swg-darthvader-3:before {
-  content: '\f01F';
-}
-
-.swg-yoda-2:before {
-  content: '\f020';
-}
-
-.swg-darthvader:before {
-  content: '\f021';
-}
-
-.swg-stormtrooper:before {
-  content: '\f022';
-}
-
-.swg-c3po:before {
-  content: '\f023';
-}
-
-.swg-yoda:before {
-  content: '\f024';
-}
-
-.swg-bobbafett:before {
-  content: '\f025';
-}
-
-.swg-saberjedi:before {
-  content: '\f026';
-}
-
-.swg-sabersith:before {
-  content: '\f027';
-}
-
-.swg-atat:before {
-  content: '\f028';
-}
-
-.swg-xwing:before {
-  content: '\f029';
-}
-
-.swg-wookie:before {
-  content: '\f02A';
-}
-
-.swg-akbar:before {
-  content: '\f02B';
-}
-
-.swg-falcon:before {
-  content: '\f02C';
-}
-
-.swg-leia:before {
-  content: '\f02D';
-}
-
-.swg-tie:before {
-  content: '\f02E';
-}
-
-.swg-lightsabers:before {
-  content: '\f02F';
-}
-
-.swg-kylo:before {
-  content: '\f030';
-}
-
-.swg-bb8:before {
-  content: '\f031';
-}
-
-.swg-trooper-ep7:before {
-  content: '\f032';
-}
-
-.swg-phasma:before {
-  content: '\f033';
-}
-
-.swg-trooper-o:before {
-  content: '\f034';
-}
-
-.swg-darthvader-o:before {
-  content: '\f035';
-}
-
-.swg-deathstar-o:before {
-  content: '\f036';
-}
-
-.swg-falcon-o:before {
-  content: '\f037';
-}
-
-.swg-r2d2-o:before {
-  content: '\f038';
-}
-
-.swg-tfdroid-o:before {
-  content: '\f039';
-}
-
-.swg-c3po-o:before {
-  content: '\f03A';
-}
-
-.swg-bobbafett-o:before {
-  content: '\f03B';
-}
-
-.swg-rogueone-title:before {
-  content: '\f03C';
-}
-
-.swg-rogueone-sybm:before {
-  content: '\f03D';
-}
-
-.swg-rogueone-2:before {
-  content: '\f03E';
-}
-
-.swg-k2s0:before {
-  content: '\f03F';
-}
-
-.swg-jynerso:before {
-  content: '\f040';
-}
-
-.swg-cassianandor:before {
-  content: '\f041';
-}
-
-.swg-mazkanata:before {
-  content: '\f042';
-}
-
-.swg-deathtrooper:before {
-  content: '\f043';
-}
-
-.swg-sawgerrera:before {
-  content: '\f044';
-}
-
-.swg-tie-2:before {
-  content: '\f045';
-}
-
-.swg-xwing-2:before {
-  content: '\f046';
-}
-
-.swg-falcon-2:before {
-  content: '\f047';
-}
-
-.swg-bobbafett-2:before {
-  content: '\f048';
-}
-
-.swg-darthvader-2:before {
-  content: '\f049';
-}
-
-.swg-bb8-2:before {
-  content: '\f04A';
-}
-
-.swg-cantina:before {
-  content: '\f04B';
-}
-
-.swg-carbonite:before {
-  content: '\f04C';
-}
-
-.swg-hologram:before {
-  content: '\f04D';
-}
-
-.swg-deathstar-2:before {
-  content: '\f04E';
-}
-
-.swg-combatdrone:before {
-  content: '\f04F';
-}
-
-.swg-falcon-3:before {
-  content: '\f050';
-}
-
-.swg-landspeeder:before {
-  content: '\f051';
-}
-
-.swg-speederbike:before {
-  content: '\f052';
-}
-
-.swg-stardestroyer:before {
-  content: '\f053';
-}
-
-.swg-xwing-3:before {
-  content: '\f054';
-}
-
-.swg-tie-3:before {
-  content: '\f055';
-}
-
-.swg-ywing:before {
-  content: '\f056';
-}
-
-.swg-jedistarfight:before {
-  content: '\f057';
-}
-
-.swg-sandcrawler:before {
-  content: '\f058';
-}
-
-.swg-atat-2:before {
-  content: '\f059';
-}
-
-.swg-atst:before {
-  content: '\f05A';
-}
-
-.swg-hanblaster:before {
-  content: '\f05B';
-}
-
-.swg-blasterrifle:before {
-  content: '\f05C';
-}
-
-.swg-lightsabers-2:before {
-  content: '\f05D';
-}
-
-.swg-lukelightsaber:before {
-  content: '\f05E';
-}
-
-.swg-kylolightsaber:before {
-  content: '\f05F';
-}
-
-.swg-darthvader-4:before {
-  content: '\f060';
-}
-
-.swg-anakin:before {
-  content: '\f061';
-}
-
-.swg-anakin-young:before {
-  content: '\f062';
-}
-
-.swg-anakin-kid:before {
-  content: '\f063';
-}
-
-.swg-hansolo:before {
-  content: '\f064';
-}
-
-.swg-leia-2:before {
-  content: '\f065';
-}
-
-.swg-lukeskywalker:before {
-  content: '\f066';
-}
-
-.swg-c3po-2:before {
-  content: '\f067';
-}
-
-.swg-r2d2-2:before {
-  content: '\f068';
-}
-
-.swg-bb8-3:before {
-  content: '\f069';
-}
-
-.swg-padme:before {
-  content: '\f06A';
-}
-
-.swg-yoda-3:before {
-  content: '\f06B';
-}
-
-.swg-chewbacca:before {
-  content: '\f06C';
-}
-
-.swg-emperor:before {
-  content: '\f06D';
-}
-
-.swg-dooku:before {
-  content: '\f06E';
-}
-
-.swg-darthmaul:before {
-  content: '\f06F';
-}
-
-.swg-stormtrooper-2:before {
-  content: '\f070';
-}
-
-.swg-snowtrooper:before {
-  content: '\f071';
-}
-
-.swg-clonetrooper:before {
-  content: '\f072';
-}
-
-.swg-bobafett:before {
-  content: '\f073';
-}
-
-.swg-jabba:before {
-  content: '\f074';
-}
-
-.swg-jabba:before {
-  content: '\f074';
-}
-
-.swg-imperialguard:before {
-  content: '\f075';
-}
-
-.swg-quigonjinn:before {
-  content: '\f076';
-}
-
-.swg-obiwankenobi:before {
-  content: '\f077';
-}
-
-.swg-macewindu:before {
-  content: '\f078';
-}
-
-.swg-starwarsrebels:before {
-  content: '\f079';
-}
-
-.swg-clonewars:before {
-  content: '\f07A';
-}
-
-.swg-swtrilogy:before {
-  content: '\f07B';
-}
-
-.swg-100clones:before {
-  content: '\f07C';
-}
-
-.swg-lastjedi:before {
-  content: '\f07D';
-}
-
-.swg-lastjedi-2:before {
-  content: '\f07E';
-}
-
-.swg-40starwars:before {
-  content: '\f07F';
-}
-
-.swg-darthvader-5:before {
-  content: '\f080';
-}
-
-.swg-stormtrooper-3:before {
-  content: '\f081';
-}
-
-.swg-clonetrooper-2:before {
-  content: '\f082';
-}
-
-.swg-bobafett-2:before {
-  content: '\f083';
-}
-
-.swg-kylo-2:before {
-  content: '\f084';
-}
-
-.swg-wookie-2:before {
-  content: '\f085';
-}
-
-.swg-r2d2-3:before {
-  content: '\f086';
-}
-
-.swg-c3po-3:before {
-  content: '\f087';
-}
-
-.swg-bb8-4:before {
-  content: '\f088';
-}
-
-.swg-xwingpilot:before {
-  content: '\f089';
-}
-
-.swg-firstorder:before {
-  content: '\f08A';
-}
-
-.swg-phoenix:before {
-  content: '\f08B';
-}
-
-.swg-porg-1:before {
-  content: '\f08C';
-}
-
-.swg-porg-2:before {
-  content: '\f08D';
-}
-
-.swg-porg-3:before {
-  content: '\f08E';
-}
-
-.swg-porg-4:before {
-  content: '\f08F';
-}
-
-.swg-porg-5:before {
-  content: '\f090';
-}
-
-.swg-porg-6:before {
-  content: '\f091';
-}
-
-.swg-porg-7:before {
-  content: '\f092';
-}
-
-.swg-porg-8:before {
-  content: '\f093';
-}
-
-.swg-porg-9:before {
-  content: '\f094';
-}
-
-.swg-porg-10:before {
-  content: '\f095';
-}
-
-.swg-decals-1:before {
-  content: '\f096';
-}
-
-.swg-decals-2:before {
-  content: '\f097';
-}
-
-.swg-decals-3:before {
-  content: '\f098';
-}
-
-.swg-decals-4:before {
-  content: '\f099';
-}
-
-.swg-decals-5:before {
-  content: '\f09A';
-}
-
-.swg-holocron-1:before {
-  content: '\f09B';
-}
-
-.swg-holocron-2:before {
-  content: '\f09C';
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-
-@font-face {
-  font-family: 'Star Jedi';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/assets/fonts/star-jedi/star-jedi.woff) format('woff'), url(/assets/fonts/star-jedi/star-jedi.ttf) format('truetype');
 }
 
 body {
@@ -1247,92 +385,70 @@ img {
 Instead edit gulp/templates/sprite */
 
 .icon {
-        background-image: url('/assets/images/sprites/sprite-0b721b9e.svg');
+        background-image: url('/assets/images/sprites/sprite-64fe742d.svg');
     }
 
 .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-0b721b9e.png');
+        background-image: url('/assets/images/sprites/sprite-64fe742d.png');
     }
 
 .icon--arrow-back {
         width: 38px;
         height: 38px;
-        background-position: 0 100%
+        background-position: 26.436781609195403% 93.16239316239316%
     }
 
 .icon--arrow-forward {
         width: 38px;
         height: 38px;
-        background-position: 27.73722627737226% 100%
+        background-position: 48.275862068965516% 93.16239316239316%
     }
 
 .icon--at-sign {
         width: 46px;
         height: 46px;
-        background-position: 40.310077519379846% 63.63636363636363%
+        background-position: 62.65060240963855% 52.293577981651374%
     }
 
 .icon--career {
         width: 52px;
         height: 52px;
-        background-position: 62.60162601626016% 0
+        background-position: 0 55.33980582524272%
     }
 
 .icon--education {
         width: 52px;
         height: 52px;
-        background-position: 0 66.95652173913044%
-    }
-
-.icon--galactic-empire-emblem {
-        width: 77px;
-        height: 77px;
-        background-position: 0 0
+        background-position: 32.5% 55.33980582524272%
     }
 
 .icon--github {
         width: 46px;
         height: 46px;
-        background-position: 100% 0
+        background-position: 90.36144578313252% 52.293577981651374%
     }
 
 .icon--linked-in {
         width: 46px;
         height: 46px;
-        background-position: 100% 38.01652892561984%
+        background-position: 0 100%
+    }
+
+.icon--personal-logo {
+        width: 212px;
+        height: 57px;
+        background-position: 0 0
     }
 
 .large-hero {
   position: relative;
   height: 100vh;
-  z-index: -1;
 }
 
 .large-hero__bg-container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-  }
-
-.large-hero__bg-container::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: linear-gradient(to bottom right, #000, rgba(107,12,4, 0.3));
-      opacity: 0.6;
-    }
-
-.large-hero__bg-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
 
 .large-hero__text-content {
@@ -1344,17 +460,16 @@ Instead edit gulp/templates/sprite */
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     color: #fff;
-    text-shadow: 1px 1px 0 rgba(107,12,4, 0.5);
+    pointer-events: none;
   }
 
 .large-hero__title {
     margin: 0 0 0.625rem 0;
     padding-bottom: 1.25rem;
-    border-bottom: 1px #c52121 solid;
+    border-bottom: 1px rgba(244,244,244, 0.5) solid;
+    font-weight: 700;
     display: inline-block;
     max-width: none;
-    font-family: 'Star Jedi', Roboto;
-    font-weight: 100;
   }
 
 @media (min-width: 481px) {
@@ -1397,252 +512,83 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
+  height: 40px;
   z-index: 2;
+  top: 0;
+  transition: all 0.4s ease-out;
 }
 
 @media (min-width: 481px) {
 
 .site-header {
-    position: fixed;
-    background-color: rgba(107,12,4, 0.3)
+    height: auto
 }
+  }
 
-    .site-header--dark {
-      background-color: rgba(107,12,4, 0.8);
-    }
+.site-header--dark {
+    background-color: rgba(6,47,79, 0.8);
+  }
+
+.site-header--hide {
+    top: -40px;
+  }
+
+@media (min-width: 481px) {
+
+.site-header--hide {
+      top: -55px
+  }
+  }
+
+.site-header--no-bg {
+    background-color: transparent;
   }
 
 .site-header__logo {
     position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 4px rgba(0,0,0, 0.9) solid;
     z-index: 1;
     left: 50%;
-    -webkit-transform: translateX(-50%) scale(0.8);
-            transform: translateX(-50%) scale(0.8);
+    -webkit-transform: translateX(-50%) scale(0.45);
+            transform: translateX(-50%) scale(0.45);
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
-    margin-top: 5px;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
     transition: all 0.3s ease-out;
+    margin-top: 7px;
+    z-index: 10;
   }
 
 @media (min-width: 481px) {
 
 .site-header__logo {
-      margin-top: 10px
+      margin-top: 10px;
+      left: unset;
+      -webkit-transform: translateX(0) scale(0.6);
+              transform: translateX(0) scale(0.6)
   }
-
-      .site-header--dark .site-header__logo {
-        margin-top: 5px;
-        -webkit-transform: translateX(-50%) scale(0.5);
-                transform: translateX(-50%) scale(0.5);
-      }
-  }
-
-.site-header__logo-flag {
-    position: relative;
-    background-color: #6b0c04;
-    height: 75px;
-    width: 150px;
-    box-shadow: 5px 0px #000, -5px 0px #000, 0px 5px #000, 5px 5px #000, -5px 5px #000;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    transition: all 0.3s ease-out;
-    transition-property: height;
-  }
-
-@media (min-width: 481px) {
-
-.site-header__logo-flag {
-      height: 96px;
-      left: auto;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      width: 90px
-  }
-
-      .site-header--dark .site-header__logo-flag {
-        height: 52px;
-        box-shadow: 2px 0px #000, -2px 0px #000, 0px 2px #000, 2px 2px #000, -2px 2px #000;
-      }
-
-      .site-header--dark .site-header__logo-flag::before {
-        visibility: hidden;
-        opacity: 0;
-        top: 30px;
-        border-bottom: 70px solid #6b0c04;
-      }
-
-      .site-header--dark .site-header__logo-flag::after {
-        visibility: hidden;
-        opacity: 0;
-        top: 30px;
-        border-bottom: 70px solid #6b0c04;
-      }
-  }
-
-.site-header__logo-flag::before {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #6b0c04;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: -23px;
-      -webkit-transform: rotate(-150deg);
-              transform: rotate(-150deg);
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-    }
-
-@media (min-width: 481px) {
-
-.site-header__logo-flag::before {
-        top: 65px;
-        visibility: visible;
-        opacity: 1
-    }
-  }
-
-.site-header__logo-flag::after {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #6b0c04;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      right: -23.5px;
-      -webkit-transform: rotate(150deg);
-              transform: rotate(150deg);
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-    }
-
-@media (min-width: 481px) {
-
-.site-header__logo-flag::after {
-        top: 65px;
-        visibility: visible;
-        opacity: 1
-    }
-  }
-
-.site-header__logo-flag-clipper {
-    position: relative;
-  }
-
-.site-header--dark .site-header__logo-flag-clipper::before {
-      visibility: hidden;
-      opacity: 0;
-      top: 35px;
-      border-bottom: 70px solid #000;
-    }
-
-.site-header--dark .site-header__logo-flag-clipper::after {
-      visibility: hidden;
-      opacity: 0;
-      top: 35px;
-      border-bottom: 70px solid #000;
-    }
-
-.site-header__logo-flag-clipper::before {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #000;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: -28px;
-      -webkit-transform: rotate(-150deg);
-              transform: rotate(-150deg);
-      z-index: -1;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-    }
-
-@media (min-width: 481px) {
-
-.site-header__logo-flag-clipper::before {
-        top: 74px;
-        visibility: visible;
-        opacity: 1
-    }
-  }
-
-.site-header__logo-flag-clipper::after {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #000;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: 38px;
-      -webkit-transform: rotate(150deg);
-              transform: rotate(150deg);
-      z-index: -1;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-    }
-
-@media (min-width: 481px) {
-
-.site-header__logo-flag-clipper::after {
-        top: 74px;
-        visibility: visible;
-        opacity: 1
-    }
   }
 
 .site-header__logo__graphic {
     text-indent: -9999px;
   }
 
-.site-header__menu-icon-container {
-    top: 0;
-    right: 0;
-    position: fixed;
-    padding: 20px;
-    background-color: rgba(107,12,4, 0.8);
-    z-index: 10;
-    transition: all 0.3s ease-out;
-  }
-
-@media (min-width: 481px) {
-
-.site-header__menu-icon-container {
-      display: none
-  }
-  }
-
-.site-header__menu-icon-container--no-bg {
-      background-color: transparent;
-    }
-
-.site-header__menu-icon-container--hide {
-      top: -40px;
-    }
-
 .site-header__menu-icon {
     width: 20px;
     height: 19px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+@media (min-width: 481px) {
+
+.site-header__menu-icon {
+      display: none
+  }
   }
 
 .site-header__menu-icon::before {
@@ -1742,11 +688,11 @@ Instead edit gulp/templates/sprite */
       z-index: 9;
       -webkit-transform: scale(1);
               transform: scale(1);
-      background-color: rgba(24,6,37, 0.8);
+      background-color: rgba(29,39,49, 0.8);
     }
 
 .page-section {
-  background-color: #fffafa;
+  background-color: #f4f4f4;
   padding: 1rem 0;
 }
 
@@ -1759,14 +705,41 @@ Instead edit gulp/templates/sprite */
 
 .page-section--black {
     background-color: #313131;
-    color: #fffafa;
+    color: #f4f4f4;
   }
 
 .page-section--skills {
-    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
+    background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-mobile.png') top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+  }
+
+@media (min-width: 481px) {
+
+.page-section--skills {
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-tablet.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed
+  }
+  }
+
+@media (min-width: 769px) {
+
+.page-section--skills {
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-laptop.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed
+  }
+  }
+
+@media (min-width: 1025px) {
+
+.page-section--skills {
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-laptop-large.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed
+  }
   }
 
 .page-section__title-container {
@@ -1849,6 +822,7 @@ Instead edit gulp/templates/sprite */
     margin: 0;
     padding: 0;
     line-height: 4rem;
+    padding: 0 18px;
   }
 
 .primary-nav__list::after {
@@ -1860,6 +834,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 481px) {
 
 .primary-nav__list {
+      padding: 0;
       line-height: unset
   }
   }
@@ -1877,6 +852,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .primary-nav__link {
+    width: 100%;
     color: #fff;
     text-shadow: 1px 1px 0 rgba(107, 12, 4, 0.5);
     text-decoration: none;
@@ -1910,24 +886,26 @@ Instead edit gulp/templates/sprite */
   }
 
 .primary-nav__link.is-current-link {
-      color: #c52121;
+      color: #b82601;
+      background-color: rgba(244,244,244, 0.8);
     }
 
 @media (min-width: 481px) {
 
 .primary-nav__link.is-current-link {
-        color: #6b0c04;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-        background-color: #fff
+        text-shadow: 1px 1px 0 rgba(29,39,49, 0.1)
     }
+
+        .site-header--dark .primary-nav__link.is-current-link {
+          background-color: rgba(244,244,244, 0.8);
+        }
   }
 
 @media (min-width: 481px) {
 
 .primary-nav__link:hover {
-        color: #6b0c04;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-        background-color: #fff
+        color: #b82601;
+        text-shadow: 1px 1px 0 rgba(244,244,244, 0.1)
     }
   }
 
@@ -1936,10 +914,6 @@ Instead edit gulp/templates/sprite */
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 0 0 1rem 0;
-
-  font-family: 'Star Jedi', Roboto;
-
-  font-weight: 100;
 }
 
 @media (min-width: 481px) {
@@ -1959,31 +933,32 @@ Instead edit gulp/templates/sprite */
   }
 
 .section-title strong {
-    color: #6b0c04;
+    /* color: $primaryColor; */
+    color: #b82601;
   }
 
 .section-title--inline-block {
     display: inline-block;
-    border-bottom: 1px #e2e2e2 solid;
+    border-bottom: 1px rgba(29,39,49, 0.3) solid;
   }
 
 .section-title--white {
-    color: #fff;
+    color: #f4f4f4;
   }
 
 .section-title--white strong {
-      color: #c52121;
+      color: #b82601;
     }
 
 .section-title--white-inline-block {
     display: inline-block;
-    border-bottom: 1px #6b0c04 solid;
+    border-bottom: 1px rgba(244,244,244, 0.3) solid;
   }
 
 .headline {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #6b0c04;
+  color: #062f4f;
   margin: 0;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -2003,8 +978,8 @@ Instead edit gulp/templates/sprite */
     color: #333333;
   }
 
-.headline--red {
-    color: #c52121;
+.headline--primary {
+    color: #062f4f;
   }
 
 .headline--padding-t {
@@ -2151,7 +1126,7 @@ Instead edit gulp/templates/sprite */
     margin: auto;
     width: 150px;
     height: 150px;
-    border: 2px #e2e2e2 solid;
+    border: 2px #1d2731 solid;
     position: relative;
   }
 
@@ -2170,6 +1145,10 @@ Instead edit gulp/templates/sprite */
       height: 275px
   }
   }
+
+.profile__picture img {
+      width: 100%;
+    }
 
 .profile__detail-title {
     margin: 0;
@@ -2209,7 +1188,7 @@ Instead edit gulp/templates/sprite */
 }
 
 .rating__container {
-    background: rgba(255,250,250, 0.8);
+    background: rgba(244,244,244, 0.8);
     padding: 0 1rem 2rem 1rem;
     max-width: 535px;
     margin: auto;
@@ -2234,7 +1213,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .rating__list-item:hover {
-      background-color: rgba(115,115,115, 0.15);
+      background-color: rgba(29,39,49, 0.15);
     }
 
 @media (min-width: 769px) {
@@ -2260,26 +1239,40 @@ Instead edit gulp/templates/sprite */
 
 .rating__icon {
     color: #737373;
-    font-size: 15px;
+    font-size: 11px;
     transition: all 0.2s ease-out;
   }
 
 @media (min-width: 346px) {
 
 .rating__icon {
-      font-size: 18.5px
+      font-size: 14px
   }
   }
 
 @media (min-width: 481px) {
 
 .rating__icon {
-      font-size: 21px
+      font-size: 18px
+  }
+  }
+
+@media (min-width: 769px) {
+
+.rating__icon {
+      font-size: 16.5px
+  }
+  }
+
+@media (min-width: 1025px) {
+
+.rating__icon {
+      font-size: 18px
   }
   }
 
 .rating__icon--filled {
-      color: #6b0c04;
+      color: #6F4E37;
     }
 
 .timeline {
@@ -2331,7 +1324,7 @@ Instead edit gulp/templates/sprite */
 .timeline__event-container::before {
       content: '';
       position: absolute;
-      background-color: #6b0c04;
+      background-color: #062f4f;
       z-index: 0;
       width: 4px;
       top: 10px;
@@ -2363,7 +1356,7 @@ Instead edit gulp/templates/sprite */
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: #6b0c04;
+    background-color: #062f4f;
     cursor: pointer;
     left: 6px;
     width: 35px;
@@ -2406,7 +1399,7 @@ Instead edit gulp/templates/sprite */
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: #6b0c04;
+    background-color: #062f4f;
     cursor: pointer;
     left: 6px;
     width: 35px;
@@ -2491,7 +1484,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .timeline__event-list-item--active .timeline__event {
-        background-color: #6b0c04;
+        background-color: #1d2731;
       }
 
 .timeline__event-list-item--active .timeline__icon {
@@ -2503,7 +1496,7 @@ Instead edit gulp/templates/sprite */
     display: inline-block;
     border-radius: 50%;
     background-color: #fff;
-    border: 3px #6b0c04 solid;
+    border: 3px #062f4f solid;
     vertical-align: middle;
     position: relative;
     top: 50%;
@@ -2537,7 +1530,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .timeline__event:hover {
-      background-color: #6b0c04;
+      background-color: #1d2731;
     }
 
 .timeline__icon {
@@ -2774,7 +1767,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .contact__label {
-    color: #ffd4d4;
+    color: #f4f4f4;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-out;
@@ -2869,7 +1862,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .contact__icon {
-    background-color: #fffafa;
+    background-color: #f4f4f4;
     display: inline-block;
     margin: 0 5px;
     position: relative;
@@ -2896,7 +1889,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .contact__icon:hover {
-      background-color: #c52121;
+      background-color: #062f4f;
     }
 
 .contact__icon:hover .icon {
@@ -2936,7 +1929,7 @@ Instead edit gulp/templates/sprite */
 
 .site-footer {
   background-color: #313131;
-  color: #fffafa;
+  color: #f4f4f4;
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 100;
@@ -2957,29 +1950,28 @@ Instead edit gulp/templates/sprite */
   }
 
 .btn {
-  background-color: #6b0c04;
-  color: #ffffff;
+  background-color: #b82601;
+  color: #f4f4f4;
   text-decoration: none;
   padding: 0.75rem 1.2rem;
   display: inline-block;
 }
-
-.btn--white {
-    background-color: #fffafa;
-    color: #6b0c04;
-  }
 
 .btn--icon {
     padding: 0;
     width: 42px;
     height: 42px;
     position: relative;
+    transition: background-color 0.3s ease-out;
   }
 
 .btn--icon:hover {
-      background-color: #fffafa;
-      color: #6b0c04;
+      background-color: #f4f4f4;
     }
+
+.btn--icon:hover .fa-github {
+        color: #062f4f;
+      }
 
 .btn--rounded {
     border-radius: 50%;
@@ -2987,27 +1979,98 @@ Instead edit gulp/templates/sprite */
 
 .btn__icon {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: -2px;
+    left: -1px;
+    transition: color 0.3s ease-out;
   }
 
-.btn__icon .icon {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      -webkit-filter: invert(100%);
-              filter: invert(100%);
-      transition: -webkit-filter 0.2s ease-out;
-      transition: filter 0.2s ease-out;
-      transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+.btn__icon .fa-github {
+      font-size: 45px;
+      color: #f4f4f4;
     }
 
-.btn__icon .icon:hover {
-        -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
-                filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(1000%);
-      }
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.parallax::after {
+    content: '';
+    display: block;
+    position: relative;
+    background: rgba(6,47,79, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+.parallax__layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    display: block;
+    clip: rect(0, auto, auto, 0);
+  }
+
+.parallax__layer--1 {
+      z-index: 1;
+    }
+
+.parallax__layer--2 {
+      z-index: 2;
+    }
+
+.parallax__layer--3 {
+      z-index: 3;
+    }
+
+.parallax__layer--4 {
+      z-index: 4;
+    }
+
+.parallax__layer--5 {
+      z-index: 5;
+    }
+
+.parallax__image {
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+.parallax__image--full-screen {
+      width: 100%;
+      height: 100%;
+    }
+
+.parallax__image--pull-bottom {
+      bottom: 0;
+    }
+
+.parallax__image--full-width {
+      width: 100%;
+    }
+
+.parallax__image--location-front {
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+
+.parallax__image--location-back {
+      -webkit-transform: translateX(50%);
+              transform: translateX(50%);
+    }
+
+.parallax__image--anime-to-right {
+      -webkit-animation: moveToRight 80s linear;
+              animation: moveToRight 80s linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+    }

@@ -6,7 +6,7 @@
     margin: auto;
     width: 150px;
     height: 150px;
-    border: 2px $lightGray solid;
+    border: 2px $black solid;
     position: relative;
 
     @mixin forLaptop {
@@ -17,6 +17,10 @@
     @mixin forLaptopLarge {
       width: 275px;
       height: 275px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 

@@ -1,0 +1,8 @@
+@keyframes moveToRight {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 50%;
+  }
+}

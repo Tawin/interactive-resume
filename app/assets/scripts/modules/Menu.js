@@ -8,6 +8,10 @@ class Menu {
     this.pageSections = $('.page-section');
     this.headerLinks = $('.primary-nav__link');
 
+    this.init();
+  }
+
+  init() {
     this.createPageSectionWaypoints();
     this.createHeroWaypoint();
     this.createLastSectionWaypoint();

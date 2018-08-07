@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Cabin:100,300,400,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <title>Tawin Nugitrangsan | Web Developer - Interactive Resume</title>
   <meta name="keywords" content="Tawin Nugitrangsan, fullstack developer, Web developer, Interactive resume, Resume">
   <meta name="description" content="I'm Tawin Nugitrangsan, a fullstack and web developer. Let's have fun looking at my interactive resume.">
@@ -16,17 +18,12 @@
 
   <header class="site-header">
     <div class="wrapper">
-      <div class="site-header__logo-flag">
-        <span class="site-header__logo-flag-clipper"></span>
-        <div class="site-header__logo">
-          <div class="site-header__logo__graphic icon icon--galactic-empire-emblem">Tawin Nugitrangsan's Interactive Resume</div>
-        </div>
+      <div class="site-header__logo">
+        <div class="site-header__logo__graphic icon icon--personal-logo">Tawin Nugitrangsan's Interactive Resume</div>
       </div>
 
-      <div class="site-header__menu-icon-container">
-        <div class="site-header__menu-icon">
-          <div class="site-header__menu-icon__middle"></div>
-        </div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
       </div>
 
       <div class="site-header__menu-content">
@@ -50,27 +47,73 @@
     </div>
   </header>
 
-  <div class="large-hero sticky-header-triggerer">
+  <div class="large-hero">
     <div class="large-hero__bg-container">
-      <video autoplay muted loop class="large-hero__bg-video">
-        <source src="assets/videos/swos.mp4" type="video/mp4">
-      </video>
+
+      <div class="parallax">
+        <div class="parallax__layer parallax__layer--1">
+          <picture>
+            <source srcset="assets/images/night-sky-laptop-large.png 1772w, assets/images/night-sky-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/night-sky-laptop.png 1335w, assets/images/night-sky-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/night-sky-tablet.png 1079w, assets/images/night-sky-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/night-sky-mobile.png 470w, assets/images/night-sky-mobile-hi-dpi.png 940w" alt="Night sky" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--2">
+          <picture>
+            <source srcset="assets/images/architecture-bridge-connection-laptop-large.png 1772w, assets/images/architecture-bridge-connection-laptop-large-hi-dpi.png 3543w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/architecture-bridge-connection-laptop.png 1335w, assets/images/architecture-bridge-connection-laptop-hi-dpi.png 2670w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/architecture-bridge-connection-tablet.png 1079w, assets/images/architecture-bridge-connection-tablet-hi-dpi.png 2158w"
+              media="(min-width: 481px)">
+            <img srcset="assets/images/architecture-bridge-connection-mobile.png 470w, assets/images/architecture-bridge-connection-mobile-hi-dpi.png 940w"
+              alt="Red bridge" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--3">
+          <picture>
+            <source srcset="assets/images/foreground-mountain-laptop-large.png 1772w, assets/images/foreground-mountain-laptop-large-hi-dpi.png 3543w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/foreground-mountain-laptop.png 1335w, assets/images/foreground-mountain-laptop-hi-dpi.png 2670w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/foreground-mountain-tablet.png 1079w, assets/images/foreground-mountain-tablet-hi-dpi.png 2158w"
+              media="(min-width: 481px)">
+            <img srcset="assets/images/foreground-mountain-mobile.png 470w, assets/images/foreground-mountain-mobile-hi-dpi.png 940w"
+              alt="Mountain" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--4">
+          <picture>
+            <source srcset="assets/images/fog-laptop-large.png 1772w, assets/images/fog-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-laptop.png 1335w, assets/images/fog-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-tablet.png 1079w, assets/images/fog-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/fog-mobile.png 470w, assets/images/fog-mobile-hi-dpi.png 940w" alt="Fog" class="parallax__image parallax__image--pull-bottom parallax__image--full-width parallax__image--location-front parallax__image--anime-to-right">
+          </picture>
+          <picture>
+            <source srcset="assets/images/fog-laptop-large.png 1772w, assets/images/fog-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-laptop.png 1335w, assets/images/fog-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-tablet.png 1079w, assets/images/fog-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/fog-mobile.png 470w, assets/images/fog-mobile-hi-dpi.png 940w" alt="Fog" class="parallax__image parallax__image--pull-bottom parallax__image--full-width parallax__image--location-back parallax__image--anime-to-right">
+          </picture>
+        </div>
+      </div>
     </div>
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Tawin Nugitrangsan</h1>
+        <h1 class="large-hero__title">TAWIN NUGITRANGSAN</h1>
         <h2 class="large-hero__subtitle">Interactive Resume</h2>
       </div>
     </div>
   </div>
 
-  <div id="profile" class="page-section" data-matching-link="#profile-link">
+  <div id="profile" class="page-section sticky-header-triggerer" data-matching-link="#profile-link">
 
     <div class="page-section__title-container">
       <h1 class="section-title section-title--inline-block">
-        My
-        <strong>Profile</strong>
+        MY
+        <strong>PROFILE</strong>
       </h1>
       <h2 class="headline headline--lite headline--black">
         I'm a full-stack web developer
@@ -129,8 +172,8 @@
   <div id="skills" class="page-section page-section--skills" data-matching-link="#skills-link">
     <div class="page-section__title-container">
       <h1 class="section-title section-title--white section-title--white-inline-block">
-        Professional
-        <strong>Skills</strong>
+        PROFESSIONAL
+        <strong>SKILLS</strong>
       </h1>
     </div>
 
@@ -138,7 +181,7 @@
       <div class="rating">
         <div class="wrapper">
           <div class="rating__container">
-            <h2 class="headline headline--lite headline--red headline--padding-t headline--margin-b headline--margin-l">Software Development</h2>
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Software Development</h2>
             <div class="flex-layout flex-layout--no-padding">
               <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
                 <ul class="rating__list">
@@ -151,11 +194,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -170,11 +213,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -188,11 +231,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -207,11 +250,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -226,11 +269,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -245,11 +288,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -267,11 +310,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -286,11 +329,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -305,11 +348,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -324,11 +367,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -343,11 +386,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -362,11 +405,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -378,7 +421,7 @@
           </div>
 
           <div class="rating__container">
-            <h2 class="headline headline--lite headline--red headline--padding-t headline--margin-b headline--margin-l">Operating Systems</h2>
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Operating Systems</h2>
             <div class="flex-layout flex-layout--no-padding">
               <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
                 <ul class="rating__list">
@@ -391,11 +434,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -409,11 +452,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -431,11 +474,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -446,7 +489,7 @@
           </div>
 
           <div class="rating__container">
-            <h2 class="headline headline--lite headline--red headline--padding-t headline--margin-b headline--margin-l">Database Systems</h2>
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Database Systems</h2>
             <div class="flex-layout flex-layout--no-padding">
               <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
                 <ul class="rating__list">
@@ -459,11 +502,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -477,11 +520,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -499,11 +542,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -514,7 +557,7 @@
           </div>
 
           <div class="rating__container">
-            <h2 class="headline headline--lite headline--red headline--padding-t headline--margin-b headline--margin-l">Others</h2>
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Others</h2>
             <div class="flex-layout flex-layout--no-padding">
               <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
                 <ul class="rating__list">
@@ -527,11 +570,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -545,11 +588,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -563,11 +606,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -585,11 +628,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -603,11 +646,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -618,7 +661,7 @@
           </div>
 
           <div class="rating__container">
-            <h2 class="headline headline--lite headline--red headline--padding-t headline--margin-b headline--margin-l">Languages</h2>
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Languages</h2>
             <div class="flex-layout flex-layout--no-padding">
               <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
                 <ul class="rating__list">
@@ -631,11 +674,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
                         </div>
                       </div>
                     </div>
@@ -653,11 +696,11 @@
                       </div>
                       <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
                         <div class="rating__score">
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon rating__icon--filled"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
-                          <span class="swg swg-deathstar-4 rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
                         </div>
                       </div>
                     </div>
@@ -678,7 +721,7 @@
 
     <div class="page-section__title-container page-section__title-container--no-margin-b">
       <h1 class="section-title section-title--inline-block">
-        <strong>Exp</strong>eriences
+        <strong>EXP</strong>ERIENCES
       </h1>
     </div>
 
@@ -838,8 +881,8 @@
   <div id="contact" class="page-section page-section--black" data-matching-link="#contact-link">
     <div class="page-section__title-container page-section__title-container--no-margin-b">
       <h1 class="section-title section-title--white">
-        Contact
-        <strong>Me</strong>
+        CONTACT
+        <strong>ME</strong>
       </h1>
     </div>
 
@@ -881,7 +924,7 @@
         <div class="flex-layout--item">
           <div class="btn btn--icon btn--rounded">
             <a href="https://github.com/Tawin/interactive-resume" class="btn__icon">
-              <span class="icon icon--github"></span>
+              <i class="fab fa-github"></i>
             </a>
           </div>
         </div>

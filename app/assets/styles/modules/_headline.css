@@ -1,7 +1,7 @@
 .headline {
   font-size: 1.25rem;
   font-weight: 700;
-  color: $darkRed;
+  color: $primaryColor;
   margin: 0;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 
@@ -17,8 +17,8 @@
     color: #333333;
   }
 
-  &--red {
-    color: $red;
+  &--primary {
+    color: $primaryColor;
   }
 
   &--padding-t {

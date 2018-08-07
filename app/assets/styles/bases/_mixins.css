@@ -35,8 +35,3 @@
     display: table;
   }
 }
-
-@define-mixin starJedi {
-  font-family: 'Star Jedi', Roboto;
-  font-weight: 100;
-}

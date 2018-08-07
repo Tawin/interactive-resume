@@ -4,8 +4,6 @@
   margin: 0 0 1rem 0;
   padding: 0 0 1rem 0;
 
-  @mixin starJedi;
-
   @mixin forTablet {
     font-size: 2.75rem;
   }
@@ -17,24 +15,25 @@
   }
 
   strong {
-    color: $darkRed;
+    /* color: $primaryColor; */
+    color: $secondaryColor;
   }
 
   &--inline-block {
     display: inline-block;
-    border-bottom: 1px $lightGray solid;
+    border-bottom: 1px rgba($black, 0.3) solid;
   }
 
   &--white {
-    color: #fff;
+    color: $offwhite;
 
     strong {
-      color: $red;
+      color: $secondaryColor;
     }
   }
 
   &--white-inline-block {
     display: inline-block;
-    border-bottom: 1px $darkRed solid;
+    border-bottom: 1px rgba($offwhite, 0.3) solid;
   }
 }

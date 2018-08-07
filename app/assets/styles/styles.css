@@ -1,7 +1,6 @@
 @import 'normalize.css';
-@import 'vendors/starwars-glyphicons.css';
-@import 'bases/_fonts';
 @import 'bases/_variables';
+@import 'bases/_keyframes';
 @import 'bases/_mixins';
 @import 'bases/_global';
 @import 'modules/_sprite';
@@ -20,3 +19,4 @@
 @import 'modules/_contact';
 @import 'modules/_site-footer';
 @import 'modules/_btn';
+@import 'modules/_parallax';

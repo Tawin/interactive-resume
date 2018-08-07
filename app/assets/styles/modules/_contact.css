@@ -39,7 +39,7 @@
   }
 
   &__label {
-    color: $lightRed;
+    color: $offwhite;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-out;
@@ -130,7 +130,7 @@
     }
 
     &:hover {
-      background-color: $red;
+      background-color: $primaryColor;
 
       .icon {
         filter: invert(100%);

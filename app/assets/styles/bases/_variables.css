@@ -1,19 +1,16 @@
-$yellow: #beb700;
+/* $primaryLight: #72bae5; */
+$primaryColor: #062f4f;
+/* $primaryDark: #242582; */
 
-$blue: #2e61a3;
+/* $secondaryLight: #99738e; */
+$secondaryColor: #b82601;
+/* $secondaryDark: #553d67; */
 
-$green: #3f9357;
+$tertiaryColor: #6F4E37;
 
-$lightOrange: #ffe4d1;
-
-$lightRed: #ffd4d4;
-$red: #c52121;
-$darkRed: #6b0c04;
-
-$darkPurple: #180625;
-
-$offwhite: #fffafa;
+$offwhite: #f4f4f4;
+$black: #1d2731;
 
 $lightGray: #e2e2e2;
 $gray: #acacac;
-$darkGray: #737373
+$darkGray: #737373;

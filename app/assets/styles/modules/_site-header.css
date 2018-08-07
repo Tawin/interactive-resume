@@ -1,179 +1,46 @@
 .site-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
+  height: 40px;
   z-index: 2;
+  top: 0;
+  transition: all 0.4s ease-out;
 
   @mixin forTablet {
-    position: fixed;
-    background-color: rgba($darkRed, 0.3);
+    height: auto;
+  }
 
-    &--dark {
-      background-color: rgba($darkRed, 0.8);
+  &--dark {
+    background-color: rgba($primaryColor, 0.8);
+  }
+
+  &--hide {
+    top: -40px;
+
+    @mixin forTablet {
+      top: -55px;
     }
+  }
+
+  &--no-bg {
+    background-color: transparent;
   }
 
   &__logo {
     position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 4px rgba(#000, 0.9) solid;
     z-index: 1;
     left: 50%;
-    transform: translateX(-50%) scale(0.8);
+    transform: translateX(-50%) scale(0.45);
     transform-origin: 50% 0;
-    margin-top: 5px;
+    filter: invert(100%);
     transition: all 0.3s ease-out;
+    margin-top: 7px;
+    z-index: 10;
 
     @mixin forTablet {
       margin-top: 10px;
-
-      .site-header--dark & {
-        margin-top: 5px;
-        transform: translateX(-50%) scale(0.5);
-      }
-    }
-  }
-
-  &__logo-flag {
-    position: relative;
-    background-color: $darkRed;
-    height: 75px;
-    width: 150px;
-    box-shadow: 5px 0px #000, -5px 0px #000, 0px 5px #000, 5px 5px #000, -5px 5px #000;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease-out;
-    transition-property: height;
-
-    @mixin forTablet {
-      height: 96px;
-      left: auto;
-      transform: translateX(0);
-      width: 90px;
-
-      .site-header--dark & {
-        height: 52px;
-        box-shadow: 2px 0px #000, -2px 0px #000, 0px 2px #000, 2px 2px #000, -2px 2px #000;
-      }
-
-      .site-header--dark &::before {
-        visibility: hidden;
-        opacity: 0;
-        top: 30px;
-        border-bottom: 70px solid #6b0c04;
-      }
-
-      .site-header--dark &::after {
-        visibility: hidden;
-        opacity: 0;
-        top: 30px;
-        border-bottom: 70px solid #6b0c04;
-      }
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid $darkRed;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: -23px;
-      transform: rotate(-150deg);
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-
-      @mixin forTablet {
-        top: 65px;
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #6b0c04;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      right: -23.5px;
-      transform: rotate(150deg);
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-
-      @mixin forTablet {
-        top: 65px;
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
-
-  &__logo-flag-clipper {
-    position: relative;
-
-    .site-header--dark &::before {
-      visibility: hidden;
-      opacity: 0;
-      top: 35px;
-      border-bottom: 70px solid #000;
-    }
-
-    .site-header--dark &::after {
-      visibility: hidden;
-      opacity: 0;
-      top: 35px;
-      border-bottom: 70px solid #000;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #000;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: -28px;
-      transform: rotate(-150deg);
-      z-index: -1;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-
-      @mixin forTablet {
-        top: 74px;
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      border-bottom: 70px solid #000;
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      top: 0;
-      left: 38px;
-      transform: rotate(150deg);
-      z-index: -1;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease-out;
-      transition-property: border-bottom, top;
-
-      @mixin forTablet {
-        top: 74px;
-        visibility: visible;
-        opacity: 1;
-      }
+      left: unset;
+      transform: translateX(0) scale(0.6);
     }
   }
 
@@ -181,35 +48,17 @@
     text-indent: -9999px;
   }
 
-  &__menu-icon-container {
-    top: 0;
-    right: 0;
-    position: fixed;
-    padding: 20px;
-    background-color: rgba($darkRed, 0.8);
-    z-index: 10;
-    transition: all 0.3s ease-out;
-
-    @mixin forTablet {
-      display: none;
-    }
-
-    &--no-bg {
-      background-color: transparent;
-    }
-
-    &--hide {
-      top: -40px;
-    }
-  }
-
   &__menu-icon {
     width: 20px;
     height: 19px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+
+    @mixin forTablet {
+      display: none;
+    }
 
     &::before {
       content: '';
@@ -290,7 +139,7 @@
       opacity: 1;
       z-index: 9;
       transform: scale(1);
-      background-color: rgba($darkPurple, 0.8);
+      background-color: rgba($black, 0.8);
     }
   }
 }

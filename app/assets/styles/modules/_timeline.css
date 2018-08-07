@@ -33,7 +33,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: $darkRed;
+      background-color: $primaryColor;
       z-index: 0;
       width: 4px;
       top: 10px;
@@ -60,7 +60,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: $darkRed;
+    background-color: $primaryColor;
     cursor: pointer;
     left: 6px;
     width: 35px;
@@ -92,7 +92,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: $darkRed;
+    background-color: $primaryColor;
     cursor: pointer;
     left: 6px;
     width: 35px;
@@ -157,7 +157,7 @@
 
     &--active {
       .timeline__event {
-        background-color: $darkRed;
+        background-color: $black;
       }
 
       .timeline__icon {
@@ -170,7 +170,7 @@
     display: inline-block;
     border-radius: 50%;
     background-color: #fff;
-    border: 3px $darkRed solid;
+    border: 3px $primaryColor solid;
     vertical-align: middle;
     position: relative;
     top: 50%;
@@ -190,7 +190,7 @@
     }
 
     &:hover {
-      background-color: $darkRed;
+      background-color: $black;
     }
   }
 

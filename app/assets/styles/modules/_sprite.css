@@ -2,57 +2,57 @@
 Instead edit gulp/templates/sprite */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-0b721b9e.svg');
+        background-image: url('/assets/images/sprites/sprite-64fe742d.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-0b721b9e.png');
+        background-image: url('/assets/images/sprites/sprite-64fe742d.png');
     }
 
     .icon--arrow-back {
         width: 38px;
         height: 38px;
-        background-position: 0 100%
+        background-position: 26.436781609195403% 93.16239316239316%
     }
 
     .icon--arrow-forward {
         width: 38px;
         height: 38px;
-        background-position: 27.73722627737226% 100%
+        background-position: 48.275862068965516% 93.16239316239316%
     }
 
     .icon--at-sign {
         width: 46px;
         height: 46px;
-        background-position: 40.310077519379846% 63.63636363636363%
+        background-position: 62.65060240963855% 52.293577981651374%
     }
 
     .icon--career {
         width: 52px;
         height: 52px;
-        background-position: 62.60162601626016% 0
+        background-position: 0 55.33980582524272%
     }
 
     .icon--education {
         width: 52px;
         height: 52px;
-        background-position: 0 66.95652173913044%
-    }
-
-    .icon--galactic-empire-emblem {
-        width: 77px;
-        height: 77px;
-        background-position: 0 0
+        background-position: 32.5% 55.33980582524272%
     }
 
     .icon--github {
         width: 46px;
         height: 46px;
-        background-position: 100% 0
+        background-position: 90.36144578313252% 52.293577981651374%
     }
 
     .icon--linked-in {
         width: 46px;
         height: 46px;
-        background-position: 100% 38.01652892561984%
+        background-position: 0 100%
+    }
+
+    .icon--personal-logo {
+        width: 212px;
+        height: 57px;
+        background-position: 0 0
     }

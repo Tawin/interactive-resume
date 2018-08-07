@@ -23,7 +23,7 @@
     background-color: transparent;
 
     &:hover {
-      background-color: rgba($darkGray, 0.15);
+      background-color: rgba($black, 0.15);
 
       @mixin forLaptop {
         .rating__icon {
@@ -46,19 +46,27 @@
 
   &__icon {
     color: $darkGray;
-    font-size: 15px;
+    font-size: 11px;
     transition: all 0.2s ease-out;
 
     @mixin forMobileLarge {
-      font-size: 18.5px;
+      font-size: 14px;
     }
 
     @mixin forTablet {
-      font-size: 21px;
+      font-size: 18px;
+    }
+
+    @mixin forLaptop {
+      font-size: 16.5px;
+    }
+
+    @mixin forLaptopLarge {
+      font-size: 18px;
     }
 
     &--filled {
-      color: $darkRed;
+      color: $tertiaryColor;
     }
   }
 }

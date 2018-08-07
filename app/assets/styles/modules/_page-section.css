@@ -12,10 +12,28 @@
   }
 
   &--skills {
-    background: radial-gradient(rgba(0, 0, 0, 1), transparent), url('/assets/images/jedi-temple-desktop.jpg') top center no-repeat;
+    background: radial-gradient(rgba($black, 0.9), rgba($black, 0.7)), url('/assets/images/work-table-mobile.png') top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+
+    @mixin forTablet {
+      background: radial-gradient(rgba($black, 0.9), rgba($black, 0.7)), url('/assets/images/work-table-tablet.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    @mixin forLaptop {
+      background: radial-gradient(rgba($black, 0.9), rgba($black, 0.7)), url('/assets/images/work-table-laptop.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    @mixin forLaptopLarge {
+      background: radial-gradient(rgba($black, 0.9), rgba($black, 0.7)), url('/assets/images/work-table-laptop-large.png') top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
   }
 
   &__title-container {
