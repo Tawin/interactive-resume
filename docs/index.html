@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:100,300,400,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <title>Tawin Nugitrangsan | Web Developer - Interactive Resume</title>
+  <meta name="keywords" content="Tawin Nugitrangsan, fullstack developer, Web developer, Interactive resume, Resume">
+  <meta name="description" content="I'm Tawin Nugitrangsan, a fullstack and web developer. Let's have fun looking at my interactive resume.">
+
+  <link rel="stylesheet" href="assets/style/styles-e3e8362e47.css"/>
+
+  <script src="assets/scripts/Vendor-5854d799a1.js"></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <div class="site-header__logo__graphic icon icon--personal-logo">Tawin Nugitrangsan's Interactive Resume</div>
+      </div>
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <div class="site-header__menu-content">
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__list-item">
+              <a href="#profile" id="profile-link" class="primary-nav__link">Profile</a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a href="#skills" id="skills-link" class="primary-nav__link">Skills</a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a href="#experiences" id="experiences-link" class="primary-nav__link">Experiences</a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a href="#contact" id="contact-link" class="primary-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="large-hero">
+    <div class="large-hero__bg-container">
+
+      <div class="parallax">
+        <div class="parallax__layer parallax__layer--1">
+          <picture>
+            <source srcset="assets/images/night-sky-laptop-large.png 1772w, assets/images/night-sky-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/night-sky-laptop.png 1335w, assets/images/night-sky-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/night-sky-tablet.png 1079w, assets/images/night-sky-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/night-sky-mobile.png 470w, assets/images/night-sky-mobile-hi-dpi.png 940w" alt="Night sky" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--2">
+          <picture>
+            <source srcset="assets/images/architecture-bridge-connection-laptop-large.png 1772w, assets/images/architecture-bridge-connection-laptop-large-hi-dpi.png 3543w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/architecture-bridge-connection-laptop.png 1335w, assets/images/architecture-bridge-connection-laptop-hi-dpi.png 2670w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/architecture-bridge-connection-tablet.png 1079w, assets/images/architecture-bridge-connection-tablet-hi-dpi.png 2158w"
+              media="(min-width: 481px)">
+            <img srcset="assets/images/architecture-bridge-connection-mobile.png 470w, assets/images/architecture-bridge-connection-mobile-hi-dpi.png 940w"
+              alt="Red bridge" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--3">
+          <picture>
+            <source srcset="assets/images/foreground-mountain-laptop-large.png 1772w, assets/images/foreground-mountain-laptop-large-hi-dpi.png 3543w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/foreground-mountain-laptop.png 1335w, assets/images/foreground-mountain-laptop-hi-dpi.png 2670w"
+              media="(min-width: 769px)">
+            <source srcset="assets/images/foreground-mountain-tablet.png 1079w, assets/images/foreground-mountain-tablet-hi-dpi.png 2158w"
+              media="(min-width: 481px)">
+            <img srcset="assets/images/foreground-mountain-mobile.png 470w, assets/images/foreground-mountain-mobile-hi-dpi.png 940w"
+              alt="Mountain" class="parallax__image parallax__image--full-screen">
+          </picture>
+        </div>
+        <div class="parallax__layer parallax__layer--4">
+          <picture>
+            <source srcset="assets/images/fog-laptop-large.png 1772w, assets/images/fog-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-laptop.png 1335w, assets/images/fog-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-tablet.png 1079w, assets/images/fog-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/fog-mobile.png 470w, assets/images/fog-mobile-hi-dpi.png 940w" alt="Fog" class="parallax__image parallax__image--pull-bottom parallax__image--full-width parallax__image--location-front parallax__image--anime-to-right">
+          </picture>
+          <picture>
+            <source srcset="assets/images/fog-laptop-large.png 1772w, assets/images/fog-laptop-large-hi-dpi.png 3543w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-laptop.png 1335w, assets/images/fog-laptop-hi-dpi.png 2670w" media="(min-width: 769px)">
+            <source srcset="assets/images/fog-tablet.png 1079w, assets/images/fog-tablet-hi-dpi.png 2158w" media="(min-width: 481px)">
+            <img srcset="assets/images/fog-mobile.png 470w, assets/images/fog-mobile-hi-dpi.png 940w" alt="Fog" class="parallax__image parallax__image--pull-bottom parallax__image--full-width parallax__image--location-back parallax__image--anime-to-right">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="large-hero__text-content">
+      <div class="wrapper">
+        <h1 class="large-hero__title">TAWIN NUGITRANGSAN</h1>
+        <h2 class="large-hero__subtitle">Interactive Resume</h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="profile" class="page-section sticky-header-triggerer" data-matching-link="#profile-link">
+
+    <div class="page-section__title-container">
+      <h1 class="section-title section-title--inline-block">
+        MY
+        <strong>PROFILE</strong>
+      </h1>
+      <h2 class="headline headline--lite headline--black">
+        I'm a full-stack web developer
+      </h2>
+    </div>
+
+    <div class="page-section__content">
+      <div class="profile">
+        <div class="wrapper">
+          <div class="flex-layout flex-layout--align-center">
+
+            <div class="flex-layout__item flex-layout__item--4-laptop">
+              <div class="profile__picture">
+                <img src="assets/images/profile-picture.png" alt="Profile picture">
+              </div>
+            </div>
+
+            <div class="flex-layout__item flex-layout__item--8-laptop">
+              <div class="profile__details">
+                <div class="generic-content-container generic-content-container--justify">
+                  <h2 class="headline headline--margin-b">About me</h2>
+                  <p>
+                    I started my career as a front-end developer, and found interests in back-end development. I love designing a system based
+                    on desired quality attributes for both end users and developers. Working as a software developer is like
+                    sculpting a piece of art. It must be appealing outside and, at the same time, providing high maintainability.
+                    Also, I like working as a team since no one is perfect, and we can use our diverse expertise to solve
+                    problems. And, of course, it's fun, isn't it?
+                  </p>
+                </div>
+                <div class="generic-content-container generic-content-container--smaller-margin generic-content-container--padding-r">
+                  <h2 class="headline headline--margin-b">Details</h2>
+                  <div class="flex-layout flex-layout--no-padding flex-layout--wrap flex-layout--row-static">
+                    <div class="flex-layout__item flex-layout__item--no-padding">
+                      <h3 class="profile__detail-title">Name:</h3>
+                      <p>Tawin Nugitrangsan</p>
+                    </div>
+                    <div class="flex-layout__item flex-layout__item--no-padding">
+                      <h3 class="profile__detail-title">Age:</h3>
+                      <p>28 years old</p>
+                    </div>
+                    <div class="flex-layout__item flex-layout__item--no-padding">
+                      <h3 class="profile__detail-title">Location:</h3>
+                      <p>Los Angeles, California, USA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills" class="page-section page-section--skills" data-matching-link="#skills-link">
+    <div class="page-section__title-container">
+      <h1 class="section-title section-title--white section-title--white-inline-block">
+        PROFESSIONAL
+        <strong>SKILLS</strong>
+      </h1>
+    </div>
+
+    <div class="page-section__content">
+      <div class="rating">
+        <div class="wrapper">
+          <div class="rating__container">
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Software Development</h2>
+            <div class="flex-layout flex-layout--no-padding">
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          JavaScript
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          HTML 5
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          CSS 3
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          SQL
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          ECMAScript 6
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Node.js
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Express.js
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          AngularJS
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          BEM
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          PostCSS
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Java
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          PHP
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="rating__container">
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Operating Systems</h2>
+            <div class="flex-layout flex-layout--no-padding">
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Windows
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Android
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          UNIX
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating__container">
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Database Systems</h2>
+            <div class="flex-layout flex-layout--no-padding">
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          MongoDB
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          SQLite
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          MySQL
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating__container">
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Others</h2>
+            <div class="flex-layout flex-layout--no-padding">
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Scrum
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Git
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Gulp
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          ADD
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          CMMI
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating__container">
+            <h2 class="headline headline--lite headline--primary headline--padding-t headline--margin-b headline--margin-l">Languages</h2>
+            <div class="flex-layout flex-layout--no-padding">
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          Thai
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-layout__item flex-layout__item--no-vertical-padding flex-layout__item--6-laptop">
+                <ul class="rating__list">
+                  <li class="rating__list-item">
+                    <div class="flex-layout flex-layout--no-padding flex-layout--align-center flex-layout--row-static">
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <span class="rating__title">
+                          English
+                        </span>
+                      </div>
+                      <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--6">
+                        <div class="rating__score">
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon rating__icon--filled"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                          <span class="fas fa-coffee rating__icon"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="experiences" class="page-section" data-matching-link="#experiences-link">
+
+    <div class="page-section__title-container page-section__title-container--no-margin-b">
+      <h1 class="section-title section-title--inline-block">
+        <strong>EXP</strong>ERIENCES
+      </h1>
+    </div>
+
+    <div class="page-section__content">
+      <div class="wrapper">
+
+        <div class="timeline">
+
+          <div class="flex-layout flex-layout--no-padding flex-layout--row-static flex-layout--column-at-large">
+            <div class="flex-layout__item flex-layout__item--no-padding">
+
+              <div class="timeline__event-container">
+                <div class="flex-layout flex-layout--no-padding">
+                  <div class="flex-layout__item flex-layout__item--no-padding">
+                    <div class="timeline__previous-btn">
+                      <div class="icon icon--arrow-back"></div>
+                    </div>
+                  </div>
+                  <div class="flex-layout__item flex-layout__item--no-padding flex-layout__item--fill">
+                    <ul class="timeline__event-list">
+                      <li class="timeline__event-list-item timeline__event-list-item--active" data-index="0">
+                        <div class="timeline__event">
+                          <div class="timeline__icon">
+                            <div class="icon icon--career"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline__event-list-item" data-index="1">
+                        <div class="timeline__event">
+                          <div class="timeline__icon">
+                            <div class="icon icon--education"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline__event-list-item" data-index="2">
+                        <div class="timeline__event">
+                          <div class="timeline__icon">
+                            <div class="icon icon--career"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline__event-list-item" data-index="3">
+                        <div class="timeline__event">
+                          <div class="timeline__icon">
+                            <div class="icon icon--education"></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex-layout__item flex-layout__item--no-padding">
+                    <div class="timeline__next-btn">
+                      <div class="icon icon--arrow-forward"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-layout__item flex-layout__item--fill flex-layout__item--no-padding">
+              <ul class="timeline__event-detail-list">
+                <li class="timeline__event-detail-list-item timeline__event-detail-list-item--active" data-index="0">
+                  <div class="timeline__event-detail">
+                    <h1 class="timeline__event-title">
+                      Information Security Consultant
+                    </h1>
+                    <div class="timeline__event-location">
+                      ACIS Professional Center - Bangkok, Thailand
+                    </div>
+                    <div class="timeline__event-dates">
+                      March 2012 - July 2012
+                    </div>
+                    <div class="timeline__event-description">
+                      <p>
+                        Working as an assisted senior consultant in information security courses. What I've learned is to scan websites using scanning
+                        tools, analyze results, and fix the security issues. I also learned OWASP top 10, which raised my
+                        security awareness when I develop a web application.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline__event-detail-list-item" data-index="1">
+                  <div class="timeline__event-detail">
+                    <h1 class="timeline__event-title">
+                      BS, Information Technology for Business
+                    </h1>
+                    <div class="timeline__event-location">
+                      Chulalongkorn University - Bangkok, Thailand
+                    </div>
+                    <div class="timeline__event-dates">
+                      May 2009 - March 2013
+                    </div>
+                    <div class="timeline__event-description">
+                      <p>
+                        The program is developed from the cooperation of 5 departments: Commerce, Statistics, Accountancy, Banking & Finance, and
+                        Marketing. So, not only I learned how to develop software, I also learned how to manage IT in Business.
+                        By having both business and software development knowlegde, it helps me understand the needs from
+                        both sides.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline__event-detail-list-item" data-index="2">
+                  <div class="timeline__event-detail">
+                    <h1 class="timeline__event-title">
+                      Software Developer
+                    </h1>
+                    <div class="timeline__event-location">
+                      CDG Systems, Ltd. - Bangkok, Thailand
+                    </div>
+                    <div class="timeline__event-dates">
+                      April 2013 — May 2015
+                    </div>
+                    <div class="timeline__event-description">
+                      <p>
+                        I first started in a web development project, which was to develop an internal website for the Department of Land Transport
+                        of Thailand. As a front-end developer, I was responsible for creating web pages that call web services,
+                        and creating resuable elements for my colleagues. Then, I moved to a mobile development team and
+                        worked in many projects, both internal and external. During that time, I've developed both native
+                        and cross-platform applications.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline__event-detail-list-item" data-index="3">
+                  <div class="timeline__event-detail">
+                    <h1 class="timeline__event-title">
+                      MS, Software Engineering
+                    </h1>
+                    <div class="timeline__event-location">
+                      California State University, Fullerton - Fullerton, CA
+                    </div>
+                    <div class="timeline__event-dates">
+                      January 2017— May 2018
+                    </div>
+                    <div class="timeline__event-description">
+                      <p>
+                        After I realized how much I love developing software, I started pursuing a Master's degree in Software Engineering, so that
+                        I have a deep understanding of the software development process. I've learned many useful lessons,
+                        such as how to gather and write a good SRS, how to design a high-level architecture based on quality
+                        attributes, how to develop a maintainable system, how to measure and control software development
+                        process.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="page-section page-section--black" data-matching-link="#contact-link">
+    <div class="page-section__title-container page-section__title-container--no-margin-b">
+      <h1 class="section-title section-title--white">
+        CONTACT
+        <strong>ME</strong>
+      </h1>
+    </div>
+
+    <div class="page-section__content">
+      <div class="wrapper wrapper">
+        <div class="contact">
+          <p class="contact__description">
+            Thank you for visiting at my website.
+            <br> If you have any question, feel free to contact me via information provided below.
+          </p>
+
+          <div class="contact__item">
+            <span class="contact__label contact__label--left">http://www.linkedin.com/in/nugitrangsan/</span>
+            <a href="https://www.linkedin.com/in/nugitrangsan/" class="contact__icon">
+              <span class="icon icon--linked-in"></span>
+            </a>
+          </div>
+
+          <div class="contact__item">
+            <span class="contact__label contact__label--right">nugitrangsan@gmail.com</span>
+            <a href="mailto:nugitrangsan@gmail.com" class="contact__icon">
+              <span class="icon icon--at-sign"></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="flex-layout flex-layout--align-center flex-layout--justify-center">
+        <div class="flex-layout--item">
+          <span class="site-footer__text">
+            Want to see this project on GitHub? Here you go.
+          </span>
+        </div>
+        <div class="flex-layout--item">
+          <div class="btn btn--icon btn--rounded">
+            <a href="https://github.com/Tawin/interactive-resume" class="btn__icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/App-22a6c7b4c1.js"></script>
+</body>
+
+</html>

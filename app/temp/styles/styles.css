@@ -709,7 +709,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .page-section--skills {
-    background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-mobile.png') top center no-repeat;
+    background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('../../assets/images/work-table-mobile.png') top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -718,7 +718,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 481px) {
 
 .page-section--skills {
-      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-tablet.png') top center no-repeat;
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('../../assets/images/work-table-tablet.png') top center no-repeat;
       background-size: cover;
       background-attachment: fixed
   }
@@ -727,7 +727,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 769px) {
 
 .page-section--skills {
-      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-laptop.png') top center no-repeat;
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('../../assets/images/work-table-laptop.png') top center no-repeat;
       background-size: cover;
       background-attachment: fixed
   }
@@ -736,7 +736,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1025px) {
 
 .page-section--skills {
-      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('/assets/images/work-table-laptop-large.png') top center no-repeat;
+      background: radial-gradient(rgba(29,39,49, 0.9), rgba(29,39,49, 0.7)), url('../../assets/images/work-table-laptop-large.png') top center no-repeat;
       background-size: cover;
       background-attachment: fixed
   }
